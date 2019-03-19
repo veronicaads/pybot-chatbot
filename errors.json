@@ -1,0 +1,50 @@
+[
+    {
+        "text": "Custome 3D Case ada ?",
+        "intent": "tanya_material_produk",
+        "intent_prediction": {
+            "name": "tanya_ketersediaan_produk",
+            "confidence": 0.9388822317123413
+        }
+    },
+    {
+        "text": "Kalau untuk softcase ada tidak ?",
+        "intent": "tanya_material_produk",
+        "intent_prediction": {
+            "name": "tanya_ketersediaan_produk",
+            "confidence": 0.6836419105529785
+        }
+    },
+    {
+        "text": "Bahan anticrack kan ?",
+        "intent": "tanya_material_produk",
+        "intent_prediction": {
+            "name": "greeting",
+            "confidence": 0.7926210165023804
+        }
+    },
+    {
+        "text": "Transfer kemana ?",
+        "intent": "tanya_bank_pembayaran",
+        "intent_prediction": {
+            "name": "",
+            "confidence": 0.0
+        }
+    },
+    {
+        "text": "Pengiriman dari mana ya ?",
+        "intent": "tanya_info_lokasi_olshop",
+        "intent_prediction": {
+            "name": "tanya_harga_produk",
+            "confidence": 0.7311912178993225
+        }
+    },
+    {
+        "text": "Pengirimannya pakai apa ya kak ?",
+        "intent": "tanya_logistik",
+        "intent_prediction": {
+            "name": "tanya_material_produk",
+            "confidence": 0.7213076949119568
+        }
+    }
+]

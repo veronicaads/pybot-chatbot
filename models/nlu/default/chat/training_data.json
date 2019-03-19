@@ -126,8 +126,8 @@
         "entities": [
           {
             "start": 18,
-            "end": 42,
-            "value": "Asus Zenfone Max Pro M2 ",
+            "end": 41,
+            "value": "Asus Zenfone Max Pro M2",
             "entity": "Jenis_HP"
           }
         ],
@@ -186,8 +186,8 @@
         "entities": [
           {
             "start": 28,
-            "end": 49,
-            "value": "xiaomi note 5A Prime ",
+            "end": 48,
+            "value": "xiaomi note 5A Prime",
             "entity": "Jenis_HP"
           }
         ],
@@ -258,8 +258,8 @@
         "entities": [
           {
             "start": 26,
-            "end": 33,
-            "value": "vivo 9 ",
+            "end": 32,
+            "value": "vivo 9",
             "entity": "Jenis_HP"
           }
         ],
@@ -390,8 +390,8 @@
         "entities": [
           {
             "start": 9,
-            "end": 30,
-            "value": "xiaomi redmi note 5a ",
+            "end": 29,
+            "value": "xiaomi redmi note 5a",
             "entity": "Jenis_HP"
           }
         ],
@@ -509,9 +509,9 @@
         "intent": "tanya_ketersediaan_produk",
         "entities": [
           {
-            "start": 43,
+            "start": 44,
             "end": 64,
-            "value": " xiaomi note 5a prime",
+            "value": "xiaomi note 5a prime",
             "entity": "Jenis_HP"
           }
         ],
@@ -576,6 +576,392 @@
           }
         ],
         "text": "Hardcase Xiaomi MI4I ada ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harga berapa ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapaan ya ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "Hardcase berapa harganya kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Untuk 1 unit harganya berapa ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Anticrack",
+            "entity": "Material"
+          }
+        ],
+        "text": "Anticrack berapa harganya ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harganya berapa ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "entities": [
+          {
+            "start": 22,
+            "end": 37,
+            "value": "samsung note fe",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "Berapa harganya untuk samsung note fe ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harganya berapa kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Hargyanya berapa ya ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harganya berapa ya kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harganya berapa gan?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harganya berapa min ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapa harga satuannya kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapa harganya ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapa harganya kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Pesan satu gan berapa harganya ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapa harga casenya kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Hargyanya berapa ya kak admin ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapa harga untuk casenya?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "text": "Berapa lama kak baru jadi ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "text": "Berapa lama jadinya kak ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "text": "Jadinya berapa lama kak ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "text": "Kira-kira proses pengerjaannya berapa hari ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "text": "Berapa lama jadinya kak ?"
+      },
+      {
+        "intent": "tanya_lama_pengiriman",
+        "text": "Sampenya berapa hari ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "hardcase",
+            "entity": "Material"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "value": "softcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "Itu hardcase atau softcase ya ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 6,
+            "end": 8,
+            "value": "3d",
+            "entity": "Material"
+          }
+        ],
+        "text": "Bahan 3d-nya ada ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Softcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "Softcase bisa tidak ya ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "text": "Itu bahannya apa ya kak ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "softcasenya",
+            "entity": "Material"
+          }
+        ],
+        "text": "softcasenya ada ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "text": "Bahannya apa kak ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "Hardcase nya ada kak ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "softcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "Custom case softcase -nya ada ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "Hardcasenya ada ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 6,
+            "end": 17,
+            "value": "hardcasenya",
+            "entity": "Material"
+          }
+        ],
+        "text": "Untuk hardcasenya ada kak ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "Yang hardcase ada tidak ?"
+      },
+      {
+        "intent": "tanya_ongkos_kirim",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "surabaya",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Onkos kirim ke surabaya berapa kak ?"
+      },
+      {
+        "intent": "tanya_ongkos_kirim",
+        "entities": [
+          {
+            "start": 33,
+            "end": 43,
+            "value": "Jogjakarta",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Untuk ongkos kirim berapa kak ke Jogjakarta?"
+      },
+      {
+        "intent": "tanya_ongkos_kirim",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "tegalrejo jogja",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Ongkos kirim ke tegalrejo jogja berapa ya kak ?"
+      },
+      {
+        "intent": "tanya_ongkos_kirim",
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "bekasi",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Ongkos kirim ke bekasi berapa kak ?"
+      },
+      {
+        "intent": "tanya_ongkos_kirim",
+        "entities": [
+          {
+            "start": 24,
+            "end": 66,
+            "value": "kalimantan timur tenggrong seberang separi",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Berapa ongkirnya mba ke kalimantan timur tenggrong seberang separi "
+      },
+      {
+        "intent": "tanya_ongkos_kirim",
+        "entities": [
+          {
+            "start": 10,
+            "end": 23,
+            "value": "jakarta barat",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Ongkir ke jakarta barat berapa kak ?"
+      },
+      {
+        "intent": "tanya_ongkos_kirim",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "tambun",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Ke tambun berapa ongkirnya ?"
+      },
+      {
+        "intent": "tanya_ongkos_kirim",
+        "entities": [
+          {
+            "start": 16,
+            "end": 34,
+            "value": "jepara jawa tengah",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Ongkos kirim ke jepara jawa tengah berapa kak ?"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "BCA",
+            "entity": "Nama_Bank"
+          }
+        ],
+        "text": "Sis, punya BCA tidak ? "
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "Pembayaran via apa saja kak ?"
+      },
+      {
+        "intent": "tanya_info_lokasi_olshop",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "Jakarta",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Sis di Jakarta kan ?"
+      },
+      {
+        "intent": "tanya_info_lokasi_olshop",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "Jakarta",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Ini lokasi tokonya di Jakarta mas ?"
+      },
+      {
+        "intent": "tanya_logistik",
+        "text": "Itu lewat apa ka pengirimannya ?"
       }
     ],
     "regex_features": [],
