@@ -1,0 +1,73 @@
+{
+    "rasa_nlu_data": {
+      "common_examples": [
+        {
+          "text"    : "siang kak",
+          "intent"  : "greeting",
+          "entities": []
+        },
+        {
+          "text"    : "hallo kak",
+          "intent"  : "greeting",
+          "entities": []
+        },
+        {
+          "text"    : "selamat pagi",
+          "intent"  : "greeting",
+          "entities": []
+        },
+        {
+          "text"    : "selamat pagi kak",
+          "intent"  : "greeting",
+          "entities": []
+        },
+        {
+          "text"    : "halo admin",
+          "intent"  : "greeting",
+          "entities": []
+        },
+        {
+          "text"    : "assalamualaikum",
+          "intent"  : "greeting",
+          "entities": []
+        },
+        {
+          "text"    : "selamat malam kak",
+          "intent"  : "greeting",
+          "entities": []
+        },
+        {
+          "text"    : "halo",
+          "intent"  : "greeting",
+          "entities": []
+        },
+        {
+          "text"    : "hallo sis",
+          "intent"  : "greeting",
+          "entities": []
+        },
+        {
+          "text"    : "hallo mas",
+          "intent"  : "greeting",
+          "entities": []
+        },
+        {
+          "text"    : "hi sis",
+          "intent"  : "greeting",
+          "entities": []
+        },
+        {
+          "text"    : "Mau tanya untuk vivo Y91 ada ?",
+          "intent"  : "tanya_ketersediaan_produk",
+          "entities": [
+            {
+              "start" : 15,
+              "end"   : 24,
+              "value" : " vivo Y91",
+              "entity": "Jenis_HP"
+            }
+          ]
+        }
+      ]
+    }
+  }

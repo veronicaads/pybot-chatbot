@@ -1,0 +1,606 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text"    : "Misi gann",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "Halo Admin",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "Halo mas",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "Assalamualaikum kak",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "Malam kak",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "Selamat pagi",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "Misi kak",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "hai kak",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "Permisi mas",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "Misi sis",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "halo",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "hai sis",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "siang sis",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "permisi saya mau tanya",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "permisi gan",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "hi saya mau tanya",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "misi sis",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "hai min",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "Halo ci mau tanya tentang casenya",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "halo kak",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "pagi",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "pagi kak",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "permisi",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "siang min",
+        "intent"  : "greeting",
+        "entities": []
+      },
+      {
+        "text"    : "Case untuk Samsung A7 ready kah ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 11,
+            "end"   : 21,
+            "value" : "Samsung A7",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Kak mau tanya case untuk oppo r7s ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 25,
+            "end"   : 33,
+            "value" : "oppo r7s",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Case custom untuk Asus Zenfone Max Pro M2 ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 18,
+            "end"   : 42,
+            "value" : "Asus Zenfone Max Pro M2 ",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Case HP tipe oppo A3S ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 13,
+            "end"   : 21,
+            "value" : "oppo A3S",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Kalau buat case handphone untuk Oppo Realme c1 bisa mas ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 32,
+            "end"   : 46,
+            "value" : "Oppo Realme c1",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Case untuk samsung note FE ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 11,
+            "end"   : 26,
+            "value" : "samsung note FE",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Case samsung J2 Prime ada kah ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 5,
+            "end"   : 21,
+            "value" : "samsung J2 Prime",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Kalau pesan case untuk tipe xiaomi note 5A Prime bisa tidak ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 28,
+            "end"   : 49,
+            "value" : "xiaomi note 5A Prime ",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Case untuk xiaomi note 5 apa ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 11,
+            "end"   : 24,
+            "value" : "xiaomi note 5",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Untuk pemesanan hardcase samsung A7 bisa ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 24,
+            "end"   : 35,
+            "value" : " samsung A7",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Ada case handphone tipe vivo y81 tidak ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 24,
+            "end"   : 32,
+            "value" : "vivo y81",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "kak untuk xiaomi redmi note 2 ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 10,
+            "end"   : 29,
+            "value" : "xiaomi redmi note 2",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Kak ada case untuk tipe hp wiko lenny 4 plus ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 27,
+            "end"   : 44,
+            "value" : "wiko lenny 4 plus",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Case handphonneya ada kah vivo 9 ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 26,
+            "end"   : 33,
+            "value" : "vivo 9 ",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Mau nanya case buat advan i5c plus ada gak kak?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 20,
+            "end"   : 34,
+            "value" : "advan i5c plus",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Case buat oppo a51w ada?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 10,
+            "end"   : 19,
+            "value" : "oppo a51w",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Case buat oppo mirror 5 ada?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 10,
+            "end"   : 23,
+            "value" : "oppo mirror 5",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Pengen softcase tipe huawei nova 2i, ada?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 21,
+            "end"   : 35,
+            "value" : "huawei nova 2i",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Untuk vivo v1 pro ready ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 6,
+            "end"   : 17,
+            "value" : "vivo v1 pro",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Samsung s7 edge ada tidak ya ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 0,
+            "end"   : 15,
+            "value" : "Samsung s7 edge",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Case Handphone meizu m5 apa barangnya ada ka ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 15,
+            "end"   : 23,
+            "value" : "meizu m5",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Oppo F1 plus ada tidak ya ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 0,
+            "end"   : 12,
+            "value" : "Oppo F1 plus",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Ka kalau buat case HP xiaomi redmi 6a ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 22,
+            "end"   : 37,
+            "value" : "xiaomi redmi 6a",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Apa ada untuk handphone Samsung note 9 ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 24,
+            "end"   : 38,
+            "value" : "Samsung note 9",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "ada buat xiaomi redmi note 5a ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 9,
+            "end"   : 30,
+            "value" : "xiaomi redmi note 5a ",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Apa bisa custom oppo f1 ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 16,
+            "end"   : 23,
+            "value" : "oppo f1",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Custom case oppo a3s ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 12,
+            "end"   : 20,
+            "value" : "oppo a3s",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Ada oppo a37 ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 4,
+            "end"   : 12,
+            "value" : "oppo a37",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Tipe oppo a83 ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 5,
+            "end"   : 13,
+            "value" : "oppo a83",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Untuk handphone tipe samsung galaxy j2 pro ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 21,
+            "end"   : 42,
+            "value" : "samsung galaxy j2 pro",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Min buat oppo a39 softcase ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 9,
+            "end"   : 17,
+            "value" : "oppo a39",
+            "entity": "Jenis_HP"
+          },
+          {
+            "start" : 18,
+            "end"   : 26,
+            "value" : "softcase",
+            "entity": "Material"
+          },
+          {
+            "start" : 18,
+            "end"   : 26,
+            "value" : "softcase",
+            "entity": ""
+          }
+        ]
+      },
+      {
+        "text"    : "Custom case untuk iphone 6 ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 17,
+            "end"   : 26,
+            "value" : " iphone 6",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Aku mau case oppo a37 ada tidak ka ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 13,
+            "end"   : 21,
+            "value" : "oppo a37",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Untuk case apakah bisa untuk tipe handphone xiaomi note 5a prime ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 43,
+            "end"   : 64,
+            "value" : " xiaomi note 5a prime",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Sis kalau case oppo f9 ada tidak ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 15,
+            "end"   : 22,
+            "value" : "oppo f9",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Case untuk samsung J7 ada tidak ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 11,
+            "end"   : 21,
+            "value" : "samsung J7",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Case iphone 6 apa ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 4,
+            "end"   : 13,
+            "value" : " iphone 6",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Ada untuk zenfone 5 ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 9,
+            "end"   : 19,
+            "value" : " zenfone 5",
+            "entity": "Jenis_HP"
+          }
+        ]
+      },
+      {
+        "text"    : "Hardcase Xiaomi MI4I ada ?",
+        "intent"  : "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start" : 9,
+            "end"   : 20,
+            "value" : "Xiaomi MI4I",
+            "entity": "Jenis_HP"
+          }
+        ]
+      }
+    ]
+  }
+}

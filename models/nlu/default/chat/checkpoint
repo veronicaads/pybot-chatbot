@@ -1,0 +1,2 @@
+model_checkpoint_path: "/root/skripsweet/skripsweet_chatbot_t/models/nlu/default/chat/intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "/root/skripsweet/skripsweet_chatbot_t/models/nlu/default/chat/intent_classifier_tensorflow_embedding.ckpt"
