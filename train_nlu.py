@@ -33,5 +33,5 @@ def run():
 # Training
 #------------
 if __name__ == '__main__':
-    train('data/testData.json', 'config/nlu_config.yml', 'models/nlu')
+    train('data/testData.md', 'config/nlu_config.yml', 'models/nlu')
     run()

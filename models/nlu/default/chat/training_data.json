@@ -2,6 +2,86 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
+        "intent": "Greeting",
+        "text": "haloo kakak mimin"
+      },
+      {
+        "intent": "Greeting",
+        "text": "sore"
+      },
+      {
+        "intent": "Greeting",
+        "text": "malam kakak admin"
+      },
+      {
+        "intent": "Tanya_bank_pembayaran",
+        "text": "bisa bayar lewat apa ?"
+      },
+      {
+        "intent": "Tanya_info_lokasi_olshop",
+        "text": "pengiriman dari mana sis ?"
+      },
+      {
+        "intent": "Tanya_ketersediaan_produk",
+        "text": "nexian a1200[](Jenis_HP:nexian a1200)"
+      },
+      {
+        "intent": "Tanya_lama_pengerjaan",
+        "text": "berapa lama pengerjaan 3dcase nya ?[](Material:3dcase)"
+      },
+      {
+        "intent": "Tanya_logistik",
+        "text": "di kirimnya pakai apa ?"
+      },
+      {
+        "intent": "Tanya_logistik",
+        "text": "bisa dikirim pakai apa"
+      },
+      {
+        "intent": "Tanya_logistik",
+        "text": "dikirimnya pakai apa min?"
+      },
+      {
+        "intent": "Tanya_logistik",
+        "text": "pengirimannya gimana kak ?"
+      },
+      {
+        "intent": "Tanya_logistik",
+        "text": "kirimnya pakai apa kak"
+      },
+      {
+        "intent": "Tanya_logistik",
+        "text": "kirimnya pakai apa sis"
+      },
+      {
+        "intent": "Tanya_logistik",
+        "text": "kirimnya pakai apa kak?"
+      },
+      {
+        "intent": "Tanya_material_produk",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "untuk hardcase"
+      },
+      {
+        "intent": "Tanya_material_produk",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "mau pesan hardcase"
+      },
+      {
         "intent": "greeting",
         "text": "Misi gann"
       },
@@ -96,6 +176,294 @@
       {
         "intent": "greeting",
         "text": "siang min"
+      },
+      {
+        "intent": "greeting",
+        "text": "selamat sore"
+      },
+      {
+        "intent": "greeting",
+        "text": "sore kak"
+      },
+      {
+        "intent": "greeting",
+        "text": "halo min"
+      },
+      {
+        "intent": "greeting",
+        "text": "haloo siang"
+      },
+      {
+        "intent": "greeting",
+        "text": "selamat malam"
+      },
+      {
+        "intent": "greeting",
+        "text": "selamat malam"
+      },
+      {
+        "intent": "greeting",
+        "text": "selamat pagi min"
+      },
+      {
+        "intent": "greeting",
+        "text": "assalamualaikum"
+      },
+      {
+        "intent": "greeting",
+        "text": "siang admin cakep"
+      },
+      {
+        "intent": "greeting",
+        "text": "haloo"
+      },
+      {
+        "intent": "greeting",
+        "text": "Halo"
+      },
+      {
+        "intent": "greeting",
+        "text": "selamat sore"
+      },
+      {
+        "intent": "greeting",
+        "text": "halo sore kak"
+      },
+      {
+        "intent": "greeting",
+        "text": "sore kak"
+      },
+      {
+        "intent": "greeting",
+        "text": "selamat sore"
+      },
+      {
+        "intent": "greeting",
+        "text": "malam coy"
+      },
+      {
+        "intent": "greeting",
+        "text": "malam sis"
+      },
+      {
+        "intent": "greeting",
+        "text": "halo"
+      },
+      {
+        "intent": "greeting",
+        "text": "siang mimin"
+      },
+      {
+        "intent": "greeting",
+        "text": "HALO MIN"
+      },
+      {
+        "intent": "greeting",
+        "text": "halo min"
+      },
+      {
+        "intent": "greeting",
+        "text": "halo"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "BCA",
+            "entity": "Nama_Bank"
+          }
+        ],
+        "text": "Sis, punya BCA tidak ?"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "Pembayaran via apa saja kak ?"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "sis punya bca tidak ?[](Nama_Bank:bca)"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "pembayarannya bisa via apa saja"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harga berapa ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapaan ya ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "Hardcase berapa harganya kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Untuk 1 unit harganya berapa ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Anticrack",
+            "entity": "Material"
+          }
+        ],
+        "text": "Anticrack berapa harganya ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harganya berapa ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "entities": [
+          {
+            "start": 22,
+            "end": 37,
+            "value": "samsung note fe",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "Berapa harganya untuk samsung note fe ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harganya berapa kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Hargyanya berapa ya ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harganya berapa ya kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harganya berapa gan?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Harganya berapa min ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapa harga satuannya kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapa harganya ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapa harganya kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Pesan satu gan berapa harganya ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapa harga casenya kak ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Hargyanya berapa ya kak admin ?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Berapa harga untuk casenya?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "harganya bisa ditawar ga min"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "harganya bisa ditawar ga"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "bisa tawar ga min"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "harganya beapa"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "berapa harganya kak"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "harganya berapa kak"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "berapa kak harganya"
+      },
+      {
+        "intent": "tanya_info_lokasi_olshop",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "Jakarta",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Sis di Jakarta kan ?"
+      },
+      {
+        "intent": "tanya_info_lokasi_olshop",
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "Jakarta",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "Ini lokasi tokonya di Jakarta mas ?"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "htc u11",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case htc u11"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "vivo v1",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case vivo v1"
       },
       {
         "intent": "tanya_ketersediaan_produk",
@@ -473,13 +841,13 @@
             "entity": "Material"
           },
           {
-            "start": 18,
-            "end": 26,
+            "start": 26,
+            "end": 34,
             "value": "softcase",
             "entity": ""
           }
         ],
-        "text": "Min buat oppo a39 softcase ada ?"
+        "text": "Min buat oppo a39 softcasesoftcase ada ?"
       },
       {
         "intent": "tanya_ketersediaan_produk",
@@ -578,104 +946,546 @@
         "text": "Hardcase Xiaomi MI4I ada ?"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Harga berapa ?"
-      },
-      {
-        "intent": "tanya_harga_produk",
-        "text": "Berapaan ya ?"
-      },
-      {
-        "intent": "tanya_harga_produk",
+        "intent": "tanya_ketersediaan_produk",
         "entities": [
           {
-            "start": 0,
-            "end": 8,
-            "value": "Hardcase",
-            "entity": "Material"
+            "start": 11,
+            "end": 25,
+            "value": "samsung note 5",
+            "entity": "Jenis_HP"
           }
         ],
-        "text": "Hardcase berapa harganya kak ?"
+        "text": "case untuk samsung note 5 ada tidak ?"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Untuk 1 unit harganya berapa ?"
-      },
-      {
-        "intent": "tanya_harga_produk",
+        "intent": "tanya_ketersediaan_produk",
         "entities": [
           {
-            "start": 0,
-            "end": 9,
-            "value": "Anticrack",
+            "start": 4,
+            "end": 12,
+            "value": "softcase",
             "entity": "Material"
+          },
+          {
+            "start": 18,
+            "end": 25,
+            "value": "vivo v1",
+            "entity": "Jenis_HP"
           }
         ],
-        "text": "Anticrack berapa harganya ?"
+        "text": "ada softcase buat vivo v1 ?"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Harganya berapa ?"
-      },
-      {
-        "intent": "tanya_harga_produk",
+        "intent": "tanya_ketersediaan_produk",
         "entities": [
           {
-            "start": 22,
+            "start": 16,
+            "end": 24,
+            "value": "oppo a3s",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "mau custom case oppo a3s dong min"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 46,
+            "end": 55,
+            "value": "iphone 8+",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case untuk iphone 8+ ada tidak?iphone 8+"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "iphone 8+",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "mau cari case iphone 8+iphone 8+"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "text": "saya pengen case asus zenfone max pro m1[](Jenis_HP:asus zenfone max pro m1)"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 4,
+            "end": 16,
+            "value": "xiaomi redmi",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "mau xiaomi redmi"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "text": "mau pesan custom case untuk iphone"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 17,
+            "end": 30,
+            "value": "iphone 7 plus",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "iphone 7 plus kakiphone 7 plus"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 27,
+            "end": 40,
+            "value": "iphone 7 plus",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "mau pesen iphone 7 plus mbaiphone 7 plus"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "Xiaomi",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "Kalau buat Xiaomi ada?"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 15,
+            "end": 27,
+            "value": "redmi note 5",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan redmi note 5"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 15,
+            "end": 34,
+            "value": "xiaomi redmi note 5",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan xiaomi redmi note 5 ada tidak"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 28,
+            "end": 41,
+            "value": "iphone 7 plus",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "mau pesen case iphone 7 plusiphone 7 plus"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 20,
+            "end": 36,
+            "value": "samsung j2 prime",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case samsung j2 prime"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 26,
             "end": 37,
+            "value": "xiaomi mi 5",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau buat custom case xiaomi mi 5"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 43,
+            "end": 50,
+            "value": "vivo v1",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "mau beli custom case untuk tipe smartphone vivo v1"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 21,
+            "end": 37,
+            "value": "samsung j2 prime",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan untuk samsung j2 prime"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 15,
+            "end": 29,
+            "value": "oppo realme c1",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan oppo realme c1"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 30,
+            "end": 37,
+            "value": "vivo v1",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "mau pesen nih, ada kagak case vivo v1"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "meizu m5",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "mau pesan case meizu m5"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 28,
+            "end": 38,
+            "value": "samsung s7",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "min saya mau beli case buat samsung s7"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 34,
+            "end": 42,
+            "value": "vivo y91",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau beli custom case buat hp vivo y91"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "vivo 9",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesen case vivo 9"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 20,
+            "end": 35,
             "value": "samsung note fe",
             "entity": "Jenis_HP"
           }
         ],
-        "text": "Berapa harganya untuk samsung note fe ?"
+        "text": "saya mau pesan case samsung note fe kak"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Harganya berapa kak ?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "vivo v1",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case vivo v1"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Hargyanya berapa ya ?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "vivo v1",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau vivo v1 kak"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Harganya berapa ya kak ?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "meizu m5",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "case untuk meizu m5 ada tidak"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Harganya berapa gan?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "oppo a39",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan oppo a39"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Harganya berapa min ?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 26,
+            "end": 38,
+            "value": "oppo f1 plus",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case untuk oppo f1 plus"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Berapa harga satuannya kak ?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 29,
+            "end": 37,
+            "value": "iphone 7",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesen untuk iphone 7iphone 7"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Berapa harganya ?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 29,
+            "end": 37,
+            "value": "iphone 6",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "case untuk iphone 6 ada tidakiphone 6"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Berapa harganya kak ?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 11,
+            "end": 21,
+            "value": "samsung a7",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "case untuk samsung a7 ready kah ?"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Pesan satu gan berapa harganya ?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 20,
+            "end": 30,
+            "value": "samsung a7",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case samsung a7"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Berapa harga casenya kak ?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "vivo v1",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "min saya mau pesan case vivo v1"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Hargyanya berapa ya kak admin ?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 37,
+            "end": 50,
+            "value": "iphone 7 plus",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "min saya mau pesan case iphone 7 plusiphone 7 plus"
       },
       {
-        "intent": "tanya_harga_produk",
-        "text": "Berapa harga untuk casenya?"
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 20,
+            "end": 36,
+            "value": "samsung j2 prime",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case samsung j2 prime"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 20,
+            "end": 27,
+            "value": "vivo v1",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case vivo v1"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 20,
+            "end": 30,
+            "value": "samsung j7",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case samsung j7"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 13,
+            "end": 23,
+            "value": "samsung a3",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "kak ada case samsung a3 ?"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "vivo 9",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "mau pesan case vivo 9"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 20,
+            "end": 31,
+            "value": "vivo v1 pro",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case vivo v1 pro"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 26,
+            "end": 35,
+            "value": "iphone 8+",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "saya mau pesan case untuk iphone 8+"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "vivo v1",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "mau pesan case vivo v1"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 24,
+            "end": 34,
+            "value": "samsung a7",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "min saya mau pesan case samsung a7"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "vivo v1",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "mau pesan case vivo v1"
       },
       {
         "intent": "tanya_lama_pengerjaan",
@@ -698,8 +1508,184 @@
         "text": "Berapa lama jadinya kak ?"
       },
       {
+        "intent": "tanya_lama_pengerjaan",
+        "text": "pembuatannya berapa lama ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": "hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "lama buat ngerjain hardcase berapa kak ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "berapa lama pengerjaan hardcase ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "text": "berapa lama jadinya yang 3dcase?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 21,
+            "end": 29,
+            "value": "softcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "berapa lama ngerjain softcase nya?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "softcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "berapa lama kerjain softcase kak"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "berapa lama kak jadinya hardcase"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "text": "berapa lama jadinya anticrack[](Material:anticrack)"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "softcase",
+            "entity": "Material"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "value": "vivo",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "berapa lama kerjain softcase vivo v1 kak"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 21,
+            "end": 29,
+            "value": "softcase",
+            "entity": "Material"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "value": "vivo",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "berapa lama ngerjain softcase vivo v1 kak"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 23,
+            "end": 31,
+            "value": "softcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "berapa lama pengerjaan softcase nya kak"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "softcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "berapa lama kerjain softcase"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 17,
+            "end": 25,
+            "value": "hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "berapa lama buat hardcase"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "berapa lama jadinya hardcase ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "text": "berapa lama buat anticrack?[](Material:antircrack)"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "hardcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "berapa lama jadinya hardcase"
+      },
+      {
         "intent": "tanya_lama_pengiriman",
         "text": "Sampenya berapa hari ?"
+      },
+      {
+        "intent": "tanya_logistik",
+        "text": "Itu lewat apa ka pengirimannya ?"
       },
       {
         "intent": "tanya_material_produk",
@@ -824,6 +1810,26 @@
         "text": "Yang hardcase ada tidak ?"
       },
       {
+        "intent": "tanya_material_produk",
+        "text": "saya mau pesan 3dcase[](Material:3dcase)"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "softcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "softcase kak"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "text": "mau pesan 3dcase kak[](Material:3d case)"
+      },
+      {
         "intent": "tanya_ongkos_kirim",
         "entities": [
           {
@@ -881,7 +1887,7 @@
             "entity": "Lokasi"
           }
         ],
-        "text": "Berapa ongkirnya mba ke kalimantan timur tenggrong seberang separi "
+        "text": "Berapa ongkirnya mba ke kalimantan timur tenggrong seberang separi"
       },
       {
         "intent": "tanya_ongkos_kirim",
@@ -918,50 +1924,6 @@
           }
         ],
         "text": "Ongkos kirim ke jepara jawa tengah berapa kak ?"
-      },
-      {
-        "intent": "tanya_bank_pembayaran",
-        "entities": [
-          {
-            "start": 11,
-            "end": 14,
-            "value": "BCA",
-            "entity": "Nama_Bank"
-          }
-        ],
-        "text": "Sis, punya BCA tidak ? "
-      },
-      {
-        "intent": "tanya_bank_pembayaran",
-        "text": "Pembayaran via apa saja kak ?"
-      },
-      {
-        "intent": "tanya_info_lokasi_olshop",
-        "entities": [
-          {
-            "start": 7,
-            "end": 14,
-            "value": "Jakarta",
-            "entity": "Lokasi"
-          }
-        ],
-        "text": "Sis di Jakarta kan ?"
-      },
-      {
-        "intent": "tanya_info_lokasi_olshop",
-        "entities": [
-          {
-            "start": 22,
-            "end": 29,
-            "value": "Jakarta",
-            "entity": "Lokasi"
-          }
-        ],
-        "text": "Ini lokasi tokonya di Jakarta mas ?"
-      },
-      {
-        "intent": "tanya_logistik",
-        "text": "Itu lewat apa ka pengirimannya ?"
       }
     ],
     "regex_features": [],

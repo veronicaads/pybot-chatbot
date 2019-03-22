@@ -1,0 +1,66 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "Material"
+      ]
+    },
+    "action_save_smartphone_type": {
+      "slots": [
+        "JenisHP"
+      ]
+    },
+    "action_reply_lama_pengerjaan": {
+      "slots": []
+    },
+    "action_save_material": {
+      "slots": []
+    },
+    "action_reply_bank_tersedia": {
+      "slots": []
+    },
+    "action_reply_logistik_tersedia": {
+      "slots": []
+    },
+    "action_check_stock": {
+      "slots": []
+    },
+    "utter_unclear": {
+      "slots": []
+    },
+    "action_reply_tanya_harga": {
+      "slots": []
+    },
+    "utter_nego_harga": {
+      "slots": []
+    },
+    "utter_reply_lama_pengerjaan": {
+      "slots": []
+    },
+    "utter_reply_bank_available": {
+      "slots": []
+    },
+    "action_reply_lokasi_tersedia": {
+      "slots": []
+    },
+    "utter_tanya_pertanyaan_lain": {
+      "slots": []
+    }
+  },
+  "python": "3.6.3",
+  "max_histories": [
+    10,
+    5,
+    null
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy"
+  ],
+  "trained_at": "20190322-050907",
+  "rasa_core": "0.13.4",
+  "tensorflow": "1.12.0",
+  "sklearn": "0.20.3"
+}

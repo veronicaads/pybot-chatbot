@@ -1,0 +1,96 @@
+%YAML 1.1
+---
+actions:
+- action_check_stock
+- utter_reply_harga
+- action_save_material
+- action_reply_bank_tersedia
+- utter_tanya_pertanyaan_lain
+- utter_reply_lokasi_olshop
+- action_reply_logistik_tersedia
+- utter_reply_ketersediaan_produk_tersedia
+- utter_explain_ask_smartphone_type
+- action_reply_lokasi_tersedia
+- utter_reply_bank_available
+- utter_nego_harga
+- utter_reply_ketersediaan_produk_tidak_tersedia
+- action_reply_lama_pengerjaan
+- utter_ketersediaan_logistik
+- utter_penjelasan_material
+- action_save_smartphone_type
+- utter_unclear
+- action_reply_tanya_harga
+- utter_reply_lama_pengerjaan
+entities:
+- Material
+- Jenis_HP
+- Lokasi
+- Nama_Bank
+- Jenis HP
+intents:
+- tanya_harga_produk
+- tanya_ketersediaan_produk
+- tanya_lama_pengerjaan
+- greeting
+- Tanya_ketersediaan_produk
+- Tanya_logistik
+- Tanya_material_produk
+- tanya_material_produk
+- tanya_bank_pembayaran
+- Tanya_info_lokasi_olshop
+- Tanya_bank_pembayaran
+- Greeting
+- Tanya_lama_pengerjaan
+- Tanya_lama_pengiriman
+- Tanya_ongkos_kirim
+- Closing
+slots:
+  JenisHP:
+    type: text
+  Material:
+    type: text
+templates:
+  utter_explain_ask_smartphone_type:
+  - text: Halo kak, kami menjual custom case berbagai jenis (Hardcase, Softcase, 3D
+      Case) dengan kualitas terbaik. Silahkan beritahu jenis smartphone kakak untuk
+      kami cek ketersediannya :)
+  utter_harga_net:
+  - text: Maaf kak, harga yang tertera adalah harga net
+  utter_jelasin_material:
+  - text: Untuk lebih jelasnya silahkan kunjungi link ini ya kak ada penjelasan serta
+      contoh gambarnya.
+  utter_ketersediaan_logistik:
+  - text: tersedia {NamaLogistik}
+  utter_nego_harga:
+  - text: Maaf kak, semua harga yang tertera sudah net(tidak bisa ditawar)
+  utter_penjelasan_material:
+  - text: Silahkan kunjungi link ini ya kak untuk penjelasan mengenai produk ada contoh
+      gambarnya juga :)
+  utter_reply_bank_available:
+  - text: Bank {NamaBank} dengan nomor rekening {Norek} atas nama {AtasNama}
+  utter_reply_harga:
+  - text: Harga untuk tipe {JenisHP} dengan jenis {Material} sebesar {Harga} kak.
+      Silahkan ketik keyword 'ORDER' (tanpa kutip) kak :) jika ingin melakukan pemesanan.
+      Ada yang ingin ditanyakan lagi kak ?
+  utter_reply_ketersediaan_produk_tersedia:
+  - text: Custom case untuk handphone dengan tipe {JenisHP}  saat ini tersedia. Silahkan
+      lakukan order dengan menuliskan keyword 'ORDER' (tanpa kutip) kak :) Material
+      dan Harga yang tersedia sesuai keterangan dibawah ini kak!
+  utter_reply_ketersediaan_produk_tersedia_list:
+  - text: Material {Material} dengan harga {Harga}
+  utter_reply_ketersediaan_produk_tidak_tersedia:
+  - text: Maaf kak, custom case untuk handphone dengan tipe {JenisHP}  saat ini sedang
+      tidak tersedia. Kami akan melakukan restock barang, mohon menghubungi kami kembali
+      saat barangnya sudah tersedia. Terimakasih kak.
+  utter_reply_lama_pengerjaan:
+  - text: Pesanan akan dikerjakan selama {Durasi} hari kak. Apa ada yang ingin ditanyakan
+      lagi?
+  utter_reply_lokasi_olshop:
+  - text: Pengiriman dan lokasi olshop kami berapa di {Kota},{Provinsi}. Apakah ada
+      pertanyaan lain kak?
+  utter_tanya_pertanyaan_lain:
+  - text: Apakah ada hal lain yang kami bisa bantu? Seperti pertanyaan mengenai pembayaran
+      maupun pengiriman ataupun mengenai produk ?
+  utter_unclear:
+  - text: Maaf untuk saat ini, sistem tidak memahami maksud kakak. Mohon tunggu karena
+      pesan akan diteruskan kepada admin untuk ditanggapi.

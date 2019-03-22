@@ -1,0 +1,45 @@
+%YAML 1.1
+---
+actions:
+- action_save_smartphone_type
+- action_check_stock
+- utter_reply_ketersediaan_produk_tersedia
+- utter_reply_ketersediaan_produk_tidak_tersedia
+- utter_unclear
+- utter_explain_ask_smartphone_type
+entities:
+- Nama_Bank
+- Jenis_HP
+- Lokasi
+- Material
+intents:
+- tanya_ketersediaan_produk
+- greeting
+- Greeting
+- Tanya_ketersediaan_produk
+- Tanya_lama_pengerjaan
+- Tanya_lama_pengiriman
+- Tanya_material_produk
+- Tanya_ongkos_kirim
+- Tanya_bank_pembayaran
+- Tanya_info_lokasi_olshop
+- Tanya_logistik
+- Closing
+slots:
+  JenisHP:
+    type: text
+templates:
+  utter_explain_ask_smartphone_type:
+  - text: Halo kak, kami menjual custom case berbagai jenis (Hardcase, Softcase, 3D
+      Case) dengan kualitas terbaik. Silahkan beritahu jenis smartphone kakak untuk
+      kami cek ketersediannya :)
+  utter_reply_ketersediaan_produk_tersedia:
+  - text: Custom case untuk handphone dengan tipe {JenisHP}  saat ini tersedia. Silahkan
+      lakukan order dengan menuliskan keyword 'order' kak :)
+  utter_reply_ketersediaan_produk_tidak_tersedia:
+  - text: Maaf kak, custom case untuk handphone dengan tipe {JenisHP}  saat ini sedang
+      tidak tersedia. Kami akan melakukan restock barang, mohon menghubungi kami kembali
+      saat barangnya sudah tersedia. Terimakasih kak.
+  utter_unclear:
+  - text: Maaf untuk saat ini, chatbot tidak memahami maksud kakak, mohon ditunggu
+      pesan akan diteruskan kepada kak admin untuk ditanggapi.

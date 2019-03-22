@@ -1,0 +1,105 @@
+actions:
+  - utter_reply_ketersediaan_produk_tersedia
+  - utter_reply_ketersediaan_produk_tidak_tersedia
+  # - utter_reply_tanya_harga
+  # - utter_reply_tanya_ketersediaan_bank
+  # - utter_reply_tanya_ketersediaan_bank_no_result
+  # - utter_reply_tanya_lokasi_olshop
+  # - utter_reply_material_all
+  # - utter_reply_bank_all
+  # - utter_reply_tanya_ongkir
+  # - utter_tanya_material_known
+  # - utter_tanya_material_known_kosong
+  # - utter_tanya_logistik
+  # - utter_tanya_lama_pengerjaan
+  # - utter_closing_thankyou
+  # - utter_closing_unclear
+  - action_save_smartphone_type
+  - action_check_stock
+  - utter_explain_ask_smartphone_type
+  - utter_unclear
+
+config:
+  store_entities_as_slots: true
+
+entities:
+  - Jenis_HP
+  - Lokasi
+  - Material
+  - Nama_Bank
+
+intents:
+  - Greeting
+  - Tanya_ketersediaan_produk:
+      use_entities: true
+  - Tanya_lama_pengerjaan
+  - Tanya_lama_pengiriman
+  - Tanya_material_produk
+  - Tanya_ongkos_kirim
+  - Tanya_bank_pembayaran
+  - Tanya_info_lokasi_olshop
+  - Tanya_logistik
+  - Closing
+
+slots:
+  JenisHP:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  # Lokasi:
+  #   type: text
+  # Material:
+  #   type: text
+  # Harga:
+  #   type: text
+  # Nama_Pelanggan:
+  #   type: text
+  # Nama_Bank:
+  #   type: text
+  # Atas_Nama:
+  #   type: text
+  # Norek:
+  #   type: text
+  # Lokasi_Olshop:
+  #   type: text
+  # Ongkir:
+  #   type: text
+  # Logistik:
+  #   type: text
+  # Service:
+  #   type: text
+  # Durasi:
+  #   type: text
+
+templates:
+  utter_explain_ask_smartphone_type:
+  - text: Halo kak, kami menjual custom case berbagai jenis (Hardcase, Softcase, 3D Case) dengan kualitas terbaik. Silahkan beritahu jenis smartphone kakak untuk kami cek ketersediannya :)
+  utter_reply_ketersediaan_produk_tersedia:
+  - text: Custom case untuk handphone dengan tipe {JenisHP}  saat ini tersedia. Silahkan lakukan order dengan menuliskan keyword 'order' kak :)
+  utter_reply_ketersediaan_produk_tidak_tersedia:
+  - text: Maaf kak, custom case untuk handphone dengan tipe {JenisHP}  saat ini sedang tidak tersedia. Kami akan melakukan restock barang, mohon menghubungi kami kembali saat barangnya sudah tersedia. Terimakasih kak.
+      # utter_reply_tanya_harga:
+      # - Harga custom case untuk untuk handphone dengan tipe {Jenis_HP} adalah {harga}.
+      # utter_reply_tanya_ketersediaan_bank:
+      # - Saat ini pembayaran melalui bank {Nama_Bank} tersedia atas nama {Atas_Nama} dengan nomor rekening {Norek}.
+      # utter_reply_tanya_ketersediaan_bank_no_result:
+      # - Maaf kak, untuk saat ini pembayaran melalui bank {Nama_Bank} tidak tersedia.
+      # utter_reply_tanya_lokasi_olshop:
+      # - Lokasi pengiriman barang berasal dari {Lokasi_Olshop}.
+      # utter_reply_material_all:
+      # - Material yang tersedia untuk handphone dengan tipe {Jenis_HP} adalah {Material} dengan harga {Harga}
+      # utter_reply_bank_all:
+      # - Pembayaran dapat kakak lakukan melalui bank-bank yang tertera pada list ini {Nama_Bank} atas nama {Atas_Nama} dengan nomor rekening {Norek}
+      # utter_reply_tanya_ongkir:
+      # - Tersedia beberapa pilihan pengiriman dengan biaya pengiriman ke {Lokasi} seharga {Ongkir} menggunakan logistik {Logistik} jenis {service}.
+      # utter_tanya_material_known:
+      # - Jenis case {material} tersedia untuk jenis HP yang kakak tanyakan. Silahkan diorder :)
+      # utter_tanya_material_known_kosong:
+      # - Maaf kak, saat ini jenis case {Material} sedang tidak tersedia.
+      # utter_tanya_logistik:
+      # - Kami menggunakan jasa pengiriman {Logistik} dengan jenis {service}
+      # utter_tanya_lama_pengerjaan:
+      # - Proses pengerjaan barang sekitar {durasi} hari kak.
+      # utter_closing_thankyou:
+      # - Terimakasih kembali, semoga kakak puas dengan pelayanan kami.
+  utter_unclear:
+  - Maaf untuk saat ini, chatbot tidak memahami maksud kakak, mohon ditunggu pesan akan diteruskan kepada kak admin untuk ditanggapi.
