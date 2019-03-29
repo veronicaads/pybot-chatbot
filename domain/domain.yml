@@ -1,55 +1,61 @@
 %YAML 1.1
 ---
 actions:
-- action_check_stock
+- action_reply_tanya_harga
+- utter_reply_lokasi_olshop
+- utter_penjelasan_material
+- utter_unclear
+- utter_estimated
 - utter_reply_harga
-- action_save_material
+- utter_reply_lama_pengerjaan
+- action_check_stock
+- utter_reply_bank_available
+- action_reply_lokasi_tersedia
+- action_save_lokasi
+- utter_reply_ketersediaan_produk_tersedia
+- action_save_smartphone_type
 - action_reply_bank_tersedia
 - utter_tanya_pertanyaan_lain
-- utter_reply_lokasi_olshop
-- action_reply_logistik_tersedia
-- utter_reply_ketersediaan_produk_tersedia
-- utter_explain_ask_smartphone_type
-- action_reply_lokasi_tersedia
-- utter_reply_bank_available
+- action_save_material
 - utter_nego_harga
+- utter_closing
 - utter_reply_ketersediaan_produk_tidak_tersedia
-- action_reply_lama_pengerjaan
+- action_reply_logistik_tersedia
 - utter_ketersediaan_logistik
-- utter_penjelasan_material
-- action_save_smartphone_type
-- utter_unclear
-- action_reply_tanya_harga
-- utter_reply_lama_pengerjaan
+- action_reply_ongkir
+- action_reply_lama_pengerjaan
+- utter_explain_ask_smartphone_type
 entities:
-- Material
-- Jenis_HP
 - Lokasi
+- Jenis_HP
+- Logistik
+- Material
 - Nama_Bank
-- Jenis HP
 intents:
-- tanya_harga_produk
+- tanya_info_lokasi_olshop
+- greeting
+- tanya_bank_pembayaran
 - tanya_ketersediaan_produk
 - tanya_lama_pengerjaan
-- greeting
-- Tanya_ketersediaan_produk
-- Tanya_logistik
-- Tanya_material_produk
+- tanya_harga_produk
 - tanya_material_produk
-- tanya_bank_pembayaran
-- Tanya_info_lokasi_olshop
-- Tanya_bank_pembayaran
-- Greeting
-- Tanya_lama_pengerjaan
-- Tanya_lama_pengiriman
-- Tanya_ongkos_kirim
-- Closing
+- tanya_ongkos_kirim
+- statment_logistik
+- closing
+- tanya_logistik
+- tanya_lama_pengiriman
 slots:
   JenisHP:
+    type: text
+  Lokasi:
     type: text
   Material:
     type: text
 templates:
+  utter_closing:
+  - text: Terimakasih kak, sudah menghubungi kami :)
+  utter_estimated:
+  - text: antara {Estimated} hari
   utter_explain_ask_smartphone_type:
   - text: Halo kak, kami menjual custom case berbagai jenis (Hardcase, Softcase, 3D
       Case) dengan kualitas terbaik. Silahkan beritahu jenis smartphone kakak untuk
@@ -77,7 +83,7 @@ templates:
       lakukan order dengan menuliskan keyword 'ORDER' (tanpa kutip) kak :) Material
       dan Harga yang tersedia sesuai keterangan dibawah ini kak!
   utter_reply_ketersediaan_produk_tersedia_list:
-  - text: Material {Material} dengan harga {Harga}
+  - text: Material {Material} dengan harga {Harga} tersedia
   utter_reply_ketersediaan_produk_tidak_tersedia:
   - text: Maaf kak, custom case untuk handphone dengan tipe {JenisHP}  saat ini sedang
       tidak tersedia. Kami akan melakukan restock barang, mohon menghubungi kami kembali

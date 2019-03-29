@@ -349,7 +349,8 @@
     - action_save_smartphone_type
     - slot{"JenisHP": "vivo v1"}
     - action_check_stock
-* tanya_harga_produk
+* tanya_nego
+    - utter_nego_harga
 
 ## Generated Story -4005220494541184765
 * tanya_ketersediaan_produk{"Jenis_HP": "iphone 7 plus"}
@@ -357,7 +358,7 @@
     - slot{"JenisHP": "iphone 7 plus"}
     - action_check_stock
     - utter_tanya_pertanyaan_lain
-* tanya_harga_produk
+* tanya_nego
     - utter_nego_harga
 * Tanya_logistik
     - action_reply_logistik_tersedia
@@ -369,7 +370,7 @@
     - action_save_smartphone_type
     - slot{"JenisHP": "samsung j2 prime"}
     - action_check_stock
-* tanya_harga_produk
+* tanya_nego
     - utter_nego_harga
 
 ## Generated Story -7781540686708579189
@@ -379,7 +380,6 @@
     - action_check_stock
 * tanya_harga_produk
     - action_reply_tanya_harga
-    - rewind
 * tanya_material_produk{"Material": "3dcase"}
     - slot{"Material": "3dcase"}
     - action_reply_tanya_harga
@@ -403,7 +403,6 @@
     - action_check_stock
 * tanya_harga_produk
     - action_reply_tanya_harga
-    - rewind
 * tanya_material_produk{"Material": "3d case"}
     - slot{"Material": "3d case"}
     - action_reply_tanya_harga
@@ -466,12 +465,6 @@
 * Tanya_logistik
     - action_reply_logistik_tersedia
 
-## Generated Story 4168655936966492255
-* greeting
-    - utter_explain_ask_smartphone_type
-* Tanya_ketersediaan_produk{"Jenis_HP": "nexian a1200"}
-    - action_check_stock
-
 ## Generated Story 8506746489494110332
 * tanya_ketersediaan_produk{"Jenis_HP": "philips xenium s327"}
     - action_save_smartphone_type
@@ -500,4 +493,211 @@
     - slot{"Material": "hardcase"}
     - action_reply_lama_pengerjaan
 * tanya_harga_produk
+
+## Generated Story -6070561729036306373
+* greeting
+    - utter_explain_ask_smartphone_type
+* tanya_ketersediaan_produk{"Jenis_HP": "huawei nova 2i"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "huawei nova 2i"}
+    - action_check_stock
+* tanya_ongkos_kirim{"Lokasi": "bandung"}
+    - action_save_lokasi
+    - action_reply_ongkir
+
+## Generated Story -8745888105887542353
+* tanya_ketersediaan_produk{"Jenis_HP": "iphone 7"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "iphone 7"}
+    - action_check_stock
+    - utter_tanya_pertanyaan_lain
+* tanya_ongkos_kirim{"Lokasi": "Bekasi"}
+    - action_save_lokasi
+    - action_reply_ongkir
+
+## Generated Story -4008936508814611790
+* tanya_ketersediaan_produk{"Jenis_HP": "iphone 8+"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "iphone 8+"}
+    - action_check_stock
+* tanya_ongkos_kirim{"Lokasi": "jakarta timur"}
+    - action_save_lokasi
+    - action_reply_ongkir
+
+## Generated Story -8357392986501576573
+* tanya_ketersediaan_produk{"Jenis_HP": "iphone"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "iphone"}
+    - action_check_stock
+
+## Generated Story 3326915408642804289
+* tanya_ketersediaan_produk{"Jenis_HP": "iphone 7 plus"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "iphone 7 plus"}
+    - action_check_stock
+* tanya_ongkos_kirim{"Lokasi": "bekasi"}
+    - action_save_lokasi
+    - action_reply_ongkir
+
+## Generated Story -4579209898377289570
+* tanya_ketersediaan_produk{"Jenis_HP": "oppo a71"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "oppo a71"}
+    - action_check_stock
+* tanya_ongkos_kirim{"Lokasi": "jakarta utara"}
+    - action_save_lokasi
+    - action_reply_ongkir
+
+## Generated Story 7360658188604716027
+* tanya_ongkos_kirim{"Lokasi": "jakarta barat"}
+    - slot{"Lokasi": "jakarta barat"}
+    - action_save_lokasi
+    - slot{"Lokasi": "jakarta barat"}
+    - action_reply_ongkir
+* statment_logistik{"Logistik": "jne"}
+    - action_reply_ongkir
+
+## Generated Story 1628632734572664640
+* tanya_ketersediaan_produk{"Jenis_HP": "samsung a7"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "samsung a7"}
+    - action_check_stock
+    - utter_tanya_pertanyaan_lain
+* tanya_harga_produk
+    - action_reply_tanya_harga
+    - rewind
+* tanya_material_produk{"Material": "softcase"}
+    - slot{"Material": "softcase"}
+    - action_reply_tanya_harga
+* tanya_bank_pembayaran{"Nama_Bank": "BCA"}
+    - utter_reply_bank_available
+* tanya_info_lokasi_olshop{"Lokasi": "Jakarta"}
+    - slot{"Lokasi": "Jakarta"}
+    - action_reply_lokasi_tersedia
+* closing
+
+## Generated Story 8788425584317421216
+* tanya_bank_pembayaran{"Nama_Bank": "bca"}
+    - action_reply_bank_tersedia
+
+## Generated Story 6414133185308250608
+* tanya_bank_pembayaran{"Nama_Bank": "BCA"}
+    - action_reply_bank_tersedia
+
+## Generated Story -5740138768482320294
+* tanya_ketersediaan_produk{"Jenis_HP": "samsung a7"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "samsung a7"}
+    - action_check_stock
+    - utter_tanya_pertanyaan_lain
+* tanya_bank_pembayaran{"Nama_Bank": "BCA"}
+    - action_reply_bank_tersedia
+* tanya_info_lokasi_olshop{"Lokasi": "Jakarta"}
+    - slot{"Lokasi": "Jakarta"}
+    - action_reply_lokasi_tersedia
+* closing
+    - utter_closing
+
+## Generated Story -2751662037328512153
+* tanya_ketersediaan_produk{"Jenis_HP": "oppo r7s"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "oppo r7s"}
+    - action_check_stock
+* tanya_harga_produk
+    - action_reply_tanya_harga
+    - rewind
+* tanya_material_produk{"Material": "3dcase"}
+    - slot{"Material": "3dcase"}
+    - action_reply_tanya_harga
+* tanya_ongkos_kirim{"Lokasi": "surabaya"}
+    - slot{"Lokasi": "surabaya"}
+    - action_save_lokasi
+    - slot{"Lokasi": "surabaya"}
+    - action_reply_ongkir
+* statment_logistik{"Logistik": "jne"}
+    - action_reply_ongkir
+* tanya_lama_pengerjaan
+    - action_reply_lama_pengerjaan
+    - rewind
+* tanya_material_produk{"Material": "softcase"}
+    - slot{"Material": "softcase"}
+    - action_reply_lama_pengerjaan
+* closing
+    - utter_closing
+
+## Generated Story 2061756795346931236
+* tanya_ketersediaan_produk{"Jenis_HP": "Asus Zenfone Max Pro M2"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "Asus Zenfone Max Pro M2"}
+    - action_check_stock
+    - utter_tanya_pertanyaan_lain
+* tanya_material_produk
+    - action_reply_tanya_harga
+    - rewind
+* tanya_material_produk{"Material": "3dcase"}
+    - slot{"Material": "3dcase"}
+    - action_reply_tanya_harga
+* closing
+    - utter_closing
+
+## Generated Story -7138665776610565292
+* greeting
+    - utter_explain_ask_smartphone_type
+* tanya_ketersediaan_produk{"Material": "softcase", "Jenis_HP": "samsung j5"}
+    - slot{"Material": "softcase"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "samsung j7 prime"}
+    - action_check_stock
+* tanya_logistik
+    - action_reply_logistik_tersedia
+* closing
+    - utter_closing
+
+## Generated Story 8547080632452059766
+* greeting
+    - utter_explain_ask_smartphone_type
+* tanya_ketersediaan_produk{"Jenis_HP": "oppo realme c1"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "oppo realme c1"}
+* tanya_harga_produk
+    - action_reply_tanya_harga
+    - rewind
+* tanya_material_produk{"Material": "anticrack"}
+    - slot{"Material": "anticrack"}
+    - action_reply_tanya_harga
+* tanya_lama_pengerjaan
+    - utter_reply_lama_pengerjaan
+
+## Generated Story 8259698138650970597
+* tanya_ketersediaan_produk{"Jenis_HP": "oppo realme c1"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "oppo realme c1"}
+    - action_check_stock
+* tanya_harga_produk{"Material": "anticrack"}
+    - slot{"Material": "anticrack"}
+    - action_reply_tanya_harga
+
+## Generated Story -8997206333623976694
+* tanya_ketersediaan_produk{"Jenis_HP": "oppo realme c1"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "oppo realme c1"}
+    - action_check_stock
+* tanya_lama_pengerjaan{"Material": "anticrack"}
+    - slot{"Material": "anticrack"}
+    - action_reply_lama_pengerjaan
+
+## Generated Story -1157709953403770518
+* greeting
+    - utter_explain_ask_smartphone_type
+* tanya_ketersediaan_produk{"Jenis_HP": "oppo realme c1"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "oppo realme c1"}
+    - action_check_stock
+* tanya_lama_pengerjaan{"Material": "softcase"}
+    - slot{"Material": "softcase"}
+    - action_reply_lama_pengerjaan
+* tanya_info_lokasi_olshop
+    - action_reply_lokasi_tersedia
+* tanya_bank_pembayaran
+    - action_reply_bank_tersedia
 

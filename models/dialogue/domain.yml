@@ -1,70 +1,70 @@
 %YAML 1.1
 ---
 actions:
-- utter_reply_bank_available
-- utter_penjelasan_material
-- utter_ketersediaan_logistik
-- action_check_stock
-- action_reply_lama_pengerjaan
-- utter_reply_lama_pengerjaan
-- utter_unclear
-- utter_reply_harga
-- utter_reply_lokasi_olshop
-- utter_nego_harga
-- action_reply_logistik_tersedia
-- action_reply_tanya_harga
-- utter_reply_ketersediaan_produk_tidak_tersedia
 - action_save_smartphone_type
-- utter_reply_ketersediaan_produk_tersedia
-- action_save_material
-- action_reply_bank_tersedia
+- utter_estimated
 - utter_explain_ask_smartphone_type
+- action_save_material
+- utter_penjelasan_material
 - utter_tanya_pertanyaan_lain
 - action_reply_lokasi_tersedia
+- utter_reply_ketersediaan_produk_tidak_tersedia
+- action_reply_tanya_harga
+- utter_reply_harga
+- action_reply_bank_tersedia
+- utter_nego_harga
+- action_check_stock
+- utter_ketersediaan_logistik
+- action_save_lokasi
+- utter_reply_bank_available
+- utter_reply_ketersediaan_produk_tersedia
+- utter_unclear
+- utter_reply_lama_pengerjaan
+- action_reply_logistik_tersedia
+- action_reply_lama_pengerjaan
+- utter_reply_lokasi_olshop
+- action_reply_ongkir
+- utter_closing
 config:
   store_entities_as_slots: true
 entities:
-- Lokasi
-- Nama_Bank
 - Jenis_HP
+- Nama_Bank
+- Lokasi
+- Logistik
 - Material
-- Jenis HP
 forms: []
 intents:
-- greeting:
-    use_entities: true
-- Tanya_ketersediaan_produk:
-    use_entities: true
 - tanya_ketersediaan_produk:
-    use_entities: true
-- Tanya_logistik:
     use_entities: true
 - tanya_harga_produk:
     use_entities: true
-- Tanya_material_produk:
+- tanya_lama_pengerjaan:
     use_entities: true
 - tanya_material_produk:
     use_entities: true
+- greeting:
+    use_entities: true
+- tanya_ongkos_kirim:
+    use_entities: true
+- statment_logistik:
+    use_entities: true
+- closing:
+    use_entities: true
 - tanya_bank_pembayaran:
     use_entities: true
-- Tanya_info_lokasi_olshop:
+- tanya_info_lokasi_olshop:
     use_entities: true
-- tanya_lama_pengerjaan:
+- tanya_logistik:
     use_entities: true
-- Tanya_bank_pembayaran:
-    use_entities: true
-- Greeting:
-    use_entities: true
-- Tanya_lama_pengerjaan:
-    use_entities: true
-- Tanya_lama_pengiriman:
-    use_entities: true
-- Tanya_ongkos_kirim:
-    use_entities: true
-- Closing:
+- tanya_lama_pengiriman:
     use_entities: true
 slots:
   JenisHP:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  Lokasi:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
@@ -73,6 +73,10 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
+  utter_closing:
+  - text: Terimakasih kak, sudah menghubungi kami :)
+  utter_estimated:
+  - text: antara {Estimated} hari
   utter_explain_ask_smartphone_type:
   - text: Halo kak, kami menjual custom case berbagai jenis (Hardcase, Softcase, 3D
       Case) dengan kualitas terbaik. Silahkan beritahu jenis smartphone kakak untuk
@@ -100,7 +104,7 @@ templates:
       lakukan order dengan menuliskan keyword 'ORDER' (tanpa kutip) kak :) Material
       dan Harga yang tersedia sesuai keterangan dibawah ini kak!
   utter_reply_ketersediaan_produk_tersedia_list:
-  - text: Material {Material} dengan harga {Harga}
+  - text: Material {Material} dengan harga {Harga} tersedia
   utter_reply_ketersediaan_produk_tidak_tersedia:
   - text: Maaf kak, custom case untuk handphone dengan tipe {JenisHP}  saat ini sedang
       tidak tersedia. Kami akan melakukan restock barang, mohon menghubungi kami kembali

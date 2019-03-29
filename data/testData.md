@@ -1,15 +1,18 @@
-## intent:Tanya_logistik
-- di kirimnya pakai apa ?
-- bisa dikirim pakai apa
-- dikirimnya pakai apa min?
-- pengirimannya gimana kak ?
-- kirimnya pakai apa kak
-- kirimnya pakai apa sis
-- kirimnya pakai apa kak?
-
-## intent:Tanya_material_produk
-- untuk [hardcase](Material)
-- mau pesan [hardcase](Material)
+## intent:closing
+- tidak, terimakasih
+- sudah cukup, terimakasih
+- terimakasih untuk infonya
+- thanks
+- ok thanks
+- oke terimakasih
+- ok terimakasih kak
+- tidak kak, makasih
+- oke terimakasih mas
+- oke thanks
+- ok thanks
+- oke
+- oke terimakasih
+- nanti saya infokan lagi ya kak
 
 ## intent:greeting
 - haloo kakak mimin
@@ -61,6 +64,14 @@
 - HALO MIN
 - halo min
 - halo
+- malam sis
+- misi gan
+- halo admin
+- halo mas
+
+## intent:statment_logistik
+- [jne](Logistik) saja kak
+- [jne](Logistik) saja kak
 
 ## intent:tanya_bank_pembayaran
 - Sis, punya [BCA](Nama_Bank) tidak ?
@@ -68,6 +79,11 @@
 - sis punya bca tidak ?[](Nama_Bank:bca)
 - pembayarannya bisa via apa saja
 - bisa bayar lewat apa ?
+- sis punya [BCA](Nama_Bank) tidak?
+- sis ada [bca](Nama_Bank) tidak
+- sis punya [BCA](Nama_Bank) tidak
+- sis punya [BCA](Nama_Bank) tidak?
+- pembayaran via apa saja kak?
 
 ## intent:tanya_harga_produk
 - Harga berapa ?
@@ -95,30 +111,18 @@
 - berapa kak harganya
 - harganya berapa ?
 - harganya bisa kurang kak ?
-
-## intent:tawar_harga
-- harganya bisa ditawar ga min
-- harganya bisa ditawar ga
-- bisa tawar ga min
-- bisa nego ga harganya
-- harganya bisa kurang ?
-- ada yang lebih murah tidak ?
-
-## intent:closing
-- tidak, terimakasih
-- sudah cukup, terimakasih
-- terimakasih untuk infonya
-- thanks
-- ok thanks
-- oke terimakasih
-- ok terimakasih kak
-- tidak kak, makasih
-- oke terimakasih mas
+- harga berapa?
+- berapaan ya?
+- untuk 1 unit harganya berapa?
+- [anticrack](Material) berapa harganya?
 
 ## intent:tanya_info_lokasi_olshop
 - Sis di [Jakarta](Lokasi) kan ?
 - Ini lokasi tokonya di [Jakarta](Lokasi) mas ?
 - pengiriman dari mana sis ?
+- sis di [Jakarta](Lokasi) kan ?
+- sis di [Jakarta](Lokasi) kan ?
+- ini lokasi tokonya di jakarta mas ?
 
 ## intent:tanya_ketersediaan_produk
 - nexian a1200[](Jenis_HP:nexian a1200)
@@ -156,7 +160,7 @@
 - Tipe [oppo a83](Jenis_HP) ada ?
 - Untuk handphone tipe [samsung galaxy j2 pro](Jenis_HP) ada ?
 - Min buat [oppo a39](Jenis_HP) [softcase](Material)[softcase]() ada ?
-- Custom case untuk[ iphone 6](Jenis_HP) ada ?
+- Custom case untuk [iphone 6](Jenis_HP) ada ?
 - Aku mau case [oppo a37](Jenis_HP) ada tidak ka ?
 - Untuk case apakah bisa untuk tipe handphone [xiaomi note 5a prime](Jenis_HP) ?
 - Sis kalau case [oppo f9](Jenis_HP) ada tidak ?
@@ -167,17 +171,17 @@
 - case untuk [samsung note 5](Jenis_HP) ada tidak ?
 - ada [softcase](Material) buat [vivo v1](Jenis_HP) ?
 - mau custom case [oppo a3s](Jenis_HP) dong min
-- saya mau pesan case untuk iphone 8+ ada tidak?[iphone 8+](Jenis_HP)
-- mau cari case iphone 8+[iphone 8+](Jenis_HP)
+- saya mau pesan case untuk [iphone 8+](Jenis_HP) ada tidak?
+- mau cari case [iphone 8+](Jenis_HP)
 - saya pengen case asus zenfone max pro m1[](Jenis_HP:asus zenfone max pro m1)
 - mau [xiaomi redmi](Jenis_HP)
-- mau pesan custom case untuk iphone
-- iphone 7 plus kak[iphone 7 plus](Jenis_HP)
-- mau pesen iphone 7 plus mba[iphone 7 plus](Jenis_HP)
+- mau pesan custom case untuk [iphone 5](Jenis_HP)
+- [iphone 7 plus](Jenis_HP) kak
+- mau pesen [iphone 7 plus](Jenis_HP) mba
 - Kalau buat [Xiaomi](Jenis_HP) ada?
 - saya mau pesan [redmi note 5](Jenis_HP)
 - saya mau pesan [xiaomi redmi note 5](Jenis_HP) ada tidak
-- mau pesen case iphone 7 plus[iphone 7 plus](Jenis_HP)
+- mau pesen case iphone 7 plus(Jenis_HP)
 - saya mau pesan case [samsung j2 prime](Jenis_HP)
 - saya mau buat custom case [xiaomi mi 5](Jenis_HP)
 - mau beli custom case untuk tipe smartphone [vivo v1](Jenis_HP)
@@ -194,12 +198,12 @@
 - case untuk [meizu m5](Jenis_HP) ada tidak
 - saya mau pesan [oppo a39](Jenis_HP)
 - saya mau pesan case untuk [oppo f1 plus](Jenis_HP)
-- saya mau pesen untuk iphone 7[iphone 7](Jenis_HP)
-- case untuk iphone 6 ada tidak[iphone 6](Jenis_HP)
+- saya mau pesen untuk [iphone 7](Jenis_HP)
+- case untuk [iphone 6](Jenis_HP) ada tidak
 - case untuk [samsung a7](Jenis_HP) ready kah ?
 - saya mau pesan case [samsung a7](Jenis_HP)
 - min saya mau pesan case [vivo v1](Jenis_HP)
-- min saya mau pesan case iphone 7 plus[iphone 7 plus](Jenis_HP)
+- min saya mau pesan case [iphone 7 plus](Jenis_HP)
 - saya mau pesan case [samsung j2 prime](Jenis_HP)
 - saya mau pesan case [vivo v1](Jenis_HP)
 - saya mau pesan case [samsung j7](Jenis_HP)
@@ -213,6 +217,21 @@
 - mau pesan case philips xenium s327[](Jenis_HP:philips xenium s327)
 - mau pesan case [samsung s7](Jenis_HP)
 - mau pesan case [vivo v1](Jenis_HP)
+- ada case untuk [huawei nova 2i](Jenis_HP) tidak
+- mau pesan case [iphone 7](Jenis_HP) ada tidak kak
+- saya mau pesan case custom [iphone 8+](Jenis_HP)
+- mau pesan [iphone](Jenis_HP) 7+ casenya
+- mau pesan case [iphone 7 plus](Jenis_HP)
+- mau pesan case [oppo a71](Jenis_HP)
+- case untuk [samsung a7](Jenis_HP) ready kah ?
+- case untuk [samsung a7](Jenis_HP) ready kah ?
+- ksk mau tanya case untuk [oppo r7s](Jenis_HP) ada?
+- case custom untuk [Asus Zenfone Max Pro M2](Jenis_HP) ada ?
+- mau tanya custom [softcase](Material) untuk handphone [samsung j7 prime](Jenis_HP) dan [samsung j5](Jenis_HP) ada ?
+- kalau buat case handphone untuk [oppo realme c1](Jenis_HP) bisa mas ?
+- kalau buat case handphone untuk [oppo realme c1](Jenis_HP) bisa mas ?
+- kalau buat case handphone untuk [oppo realme c1](Jenis_HP) bisa mas ?
+- kalau buat case handphone untuk [oppo realme c1](Jenis_HP) bisa mas ?
 
 ## intent:tanya_lama_pengerjaan
 - berapa lama pengerjaan 3dcase nya ?[3dcase](Material)
@@ -238,12 +257,24 @@
 - berapa lama buat anticrack?[](Material:antircrack)
 - berapa lama jadinya [hardcase](Material)
 - bikin [hardcase](Material) berapa lama
+- berapa lama kak baru jadi?
+- berapa lama jadinya kak?
+- berapa lama jadinya [anticrack](Material) ?
+- berapa lama jadinya [softcase](Material) ?
 
 ## intent:tanya_lama_pengiriman
 - Sampenya berapa hari ?
 
 ## intent:tanya_logistik
 - Itu lewat apa ka pengirimannya ?
+- di kirimnya pakai apa ?
+- bisa dikirim pakai apa
+- dikirimnya pakai apa min?
+- pengirimannya gimana kak ?
+- kirimnya pakai apa kak
+- kirimnya pakai apa sis
+- kirimnya pakai apa kak?
+- itu lewat apa ka pengirimannya ?
 
 ## intent:tanya_material_produk
 - Itu [hardcase](Material) atau [softcase](Material) ya ?
@@ -260,6 +291,14 @@
 - saya mau pesan 3dcase[](Material:3dcase)
 - [softcase](Material) kak
 - mau pesan 3dcase kak[](Material:3d case)
+- untuk [hardcase](Material)
+- mau pesan [hardcase](Material)
+- [softcase](Material) ada tidak ?
+- [3dcase](Material) ada tidak kak?
+- [softcase](Material) saja kak
+- bahan 3dcase ada?
+- [3dcase](Material) kak
+- [anticrack](Material) berapa harganya?
 
 ## intent:tanya_ongkos_kirim
 - Onkos kirim ke [surabaya](Lokasi) berapa kak ?
@@ -270,3 +309,20 @@
 - Ongkir ke [jakarta barat](Lokasi) berapa kak ?
 - Ke [tambun](Lokasi) berapa ongkirnya ?
 - Ongkos kirim ke [jepara jawa tengah](Lokasi) berapa kak ?
+- ongkos kirim ke [bekasi](Lokasi) berapa ?
+- ongkos kirim ke [jakarta barat](Lokasi) berapa ya
+- ongkos kirim ke [surabaya](Lokasi) berapa kak?
+
+## intent:tanya_resi
+- mau minta no resi boleh ?
+- boleh minta resinya ?
+- resinya udah ada belom sis?
+- ada resinya ga kak?
+
+## intent:tawar_harga
+- harganya bisa ditawar ga min
+- harganya bisa ditawar ga
+- bisa tawar ga min
+- bisa nego ga harganya
+- harganya bisa kurang ?
+- ada yang lebih murah tidak ?
