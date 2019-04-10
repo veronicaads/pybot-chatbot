@@ -155,6 +155,12 @@
 - bisa bayar pakai apa aja
 - bayarnya dapat menggunakan apa ka?
 - bayarnya bisa menggunakan apa saja ka?
+- Transfer kemana ?
+- Pembayaran lewat apa?
+- Transfer kemana
+- Cara bayar?
+- Bayarnya kemana ya?
+- Pembayaran bisa pakai apa saja ya?
 
 ## intent:tanya_harga_produk
 - Harga berapa ?
@@ -186,6 +192,7 @@
 - berapaan ya?
 - untuk 1 unit harganya berapa?
 - [anticrack](Material) berapa harganya?
+- Price list nya boleh minta ?
 
 ## intent:tanya_info_lokasi_olshop
 - Sis di [Jakarta](Lokasi) kan ?
@@ -307,6 +314,11 @@
 - [vivo v1](Jenis_HP)
 - [samsung s7](Jenis_HP)
 - [Samsung a7](Jenis_HP)
+- Aku pakai [Samsung J7 Prime](Jenis_HP)
+- Kalo [iphone X](Jenis_HP)
+- [xiaomi A2](Jenis_HP)
+- [Hardcase](Material) [samsung j7 prime](Jenis_HP)
+- [Xiaomi redmi3](Jenis_HP)
 
 ## intent:tanya_lama_pengerjaan
 - berapa lama pengerjaan 3dcase nya ?[3dcase](Material)
@@ -338,9 +350,15 @@
 - berapa lama jadinya [softcase](Material) ?
 - kira-kira jadinya berapa lama [softcase](Material) ?
 - [softcase](Material) kira-kira jadinya berapa lama?
+- Berapa lama jadinya ?
+- [Hardcase](Material) [samsung j7 prime](Jenis_HP)
+- pengerjaan berapa hari?
 
 ## intent:tanya_lama_pengiriman
 - Sampenya berapa hari ?
+- pengiriman kira-kira berapa lama?
+- berapa lama sampainya?
+
 
 ## intent:tanya_logistik
 - Itu lewat apa ka pengirimannya ?
@@ -352,6 +370,9 @@
 - kirimnya pakai apa sis
 - kirimnya pakai apa kak?
 - itu lewat apa ka pengirimannya ?
+- Pengiriman bagaimana ?
+- Pengiriman bisa melalui apa
+- Pengiriman via apa?
 
 ## intent:tanya_material_produk
 - Itu [hardcase](Material) atau [softcase](Material) ya ?
@@ -376,6 +397,9 @@
 - bahan 3dcase ada?
 - [3dcase](Material) kak
 - [anticrack](Material) berapa harganya?
+- Custome [3dcase](Material) ada ?
+- [anticrack](Material) berapa harganya?
+
 
 ## intent:tanya_ongkos_kirim
 - Onkos kirim ke [surabaya](Lokasi) berapa kak ?
@@ -404,3 +428,6 @@
 - bisa nego ga harganya
 - harganya bisa kurang ?
 - ada yang lebih murah tidak ?
+- Kalau beli 2 ad diskon ga?
+- yg softcase bisa diskon kak ?
+- bisa dapat diskon tidak

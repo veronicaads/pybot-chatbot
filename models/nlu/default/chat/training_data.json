@@ -726,6 +726,26 @@
         "text": "bayarnya bisa menggunakan apa saja ka?"
       },
       {
+        "intent": "tanya_bank_pembayaran",
+        "text": "Transfer kemana ?"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "Pembayaran lewat apa?"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "Transfer kemana"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "Cara bayar?"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "Bayarnya kemana ya?"
+      },
+      {
         "intent": "tanya_harga_produk",
         "text": "Harga berapa ?"
       },
@@ -872,6 +892,10 @@
           }
         ],
         "text": "anticrack berapa harganya?"
+      },
+      {
+        "intent": "tanya_harga_produk",
+        "text": "Price list nya boleh minta ?"
       },
       {
         "intent": "tanya_info_lokasi_olshop",
@@ -2256,6 +2280,18 @@
         "text": "Samsung a7"
       },
       {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 10,
+            "end": 26,
+            "value": "Samsung J7 Prime",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "Aku pakai Samsung J7 Prime"
+      },
+      {
         "intent": "tanya_lama_pengerjaan",
         "entities": [
           {
@@ -2528,8 +2564,42 @@
         "text": "softcase kira-kira jadinya berapa lama?"
       },
       {
+        "intent": "tanya_lama_pengerjaan",
+        "text": "Berapa lama jadinya ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Hardcase",
+            "entity": "Material"
+          },
+          {
+            "start": 9,
+            "end": 25,
+            "value": "samsung j7 prime",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "Hardcase samsung j7 prime"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "text": "pengerjaan berapa hari?"
+      },
+      {
         "intent": "tanya_lama_pengiriman",
         "text": "Sampenya berapa hari ?"
+      },
+      {
+        "intent": "tanya_lama_pengiriman",
+        "text": "pengiriman kira-kira berapa lama?"
+      },
+      {
+        "intent": "tanya_lama_pengiriman",
+        "text": "berapa lama sampainya?"
       },
       {
         "intent": "tanya_logistik",
@@ -2566,6 +2636,18 @@
       {
         "intent": "tanya_logistik",
         "text": "itu lewat apa ka pengirimannya ?"
+      },
+      {
+        "intent": "tanya_logistik",
+        "text": "Pengiriman bagaimana ?"
+      },
+      {
+        "intent": "tanya_logistik",
+        "text": "Pengiriman bisa melalui apa"
+      },
+      {
+        "intent": "tanya_logistik",
+        "text": "Pengiriman via apa?"
       },
       {
         "intent": "tanya_material_produk",
@@ -2798,6 +2880,30 @@
         "text": "anticrack berapa harganya?"
       },
       {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "3dcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "Custome 3dcase ada ?"
+      },
+      {
+        "intent": "tanya_material_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "anticrack",
+            "entity": "Material"
+          }
+        ],
+        "text": "anticrack berapa harganya?"
+      },
+      {
         "intent": "tanya_ongkos_kirim",
         "entities": [
           {
@@ -2980,6 +3086,18 @@
       {
         "intent": "tawar_harga",
         "text": "ada yang lebih murah tidak ?"
+      },
+      {
+        "intent": "tawar_harga",
+        "text": "Kalau beli 2 ad diskon ga?"
+      },
+      {
+        "intent": "tawar_harga",
+        "text": "yg softcase bisa diskon kak ?"
+      },
+      {
+        "intent": "tawar_harga",
+        "text": "bisa dapat diskon tidak"
       }
     ],
     "regex_features": [],
