@@ -19,37 +19,43 @@
         "Lokasi"
       ]
     },
-    "utter_closing": {
-      "slots": []
-    },
     "action_reply_ongkir": {
       "slots": []
     },
-    "action_reply_logistik_tersedia": {
-      "slots": []
-    },
-    "action_reply_lama_pengerjaan": {
-      "slots": []
-    },
-    "utter_nego_harga": {
-      "slots": []
-    },
-    "utter_reply_lama_pengerjaan": {
+    "utter_closing": {
       "slots": []
     },
     "utter_tanya_pertanyaan_lain": {
       "slots": []
     },
-    "action_save_material": {
+    "action_reply_tanya_harga": {
+      "slots": []
+    },
+    "utter_nego_harga": {
+      "slots": []
+    },
+    "action_reply_lama_pengerjaan": {
+      "slots": []
+    },
+    "action_reply_logistik_tersedia": {
       "slots": []
     },
     "action_reply_bank_tersedia": {
       "slots": []
     },
-    "action_reply_tanya_harga": {
+    "utter_reply_lama_pengerjaan": {
+      "slots": []
+    },
+    "action_save_material": {
       "slots": []
     },
     "utter_reply_bank_available": {
+      "slots": []
+    },
+    "utter_unclear": {
+      "slots": []
+    },
+    "action_reply_lokasi_tersedia": {
       "slots": []
     }
   },
@@ -65,7 +71,7 @@
     "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.fallback.FallbackPolicy"
   ],
-  "trained_at": "20190325-104558",
+  "trained_at": "20190408-151537",
   "rasa_core": "0.13.4",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.3"

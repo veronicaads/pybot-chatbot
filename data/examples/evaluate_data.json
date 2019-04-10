@@ -389,6 +389,131 @@
         "text"    : "Pengirimannya pakai apa ya kak ?",
         "intent"  : "tanya_logistik",
         "entities": []
+      },
+      {
+        "text"    : "Bisa tawar ga",
+        "intent"  : "tawar_harga",
+        "entities": []
+      },
+      {
+        "text"    : "Bisa nego tidak kak",
+        "intent"  : "tawar_harga",
+        "entities": []
+      },
+      {
+        "text"    : "Diskon gak",
+        "intent"  : "tawar_harga",
+        "entities": []
+      },
+      {
+        "text"    : "thanks infonya",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "thanks",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "makasih",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "terimakasih",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "terimakasih banyak",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "thankyou",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "ok",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "ok sis",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "ok kak",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "ok min",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "thanks infonya sis",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "thanks min",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "makasih min",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "terimakasih min",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "terimakasih banyak min",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "thankyou kak",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "ok sis",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "ok sis, terimakasih",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "ok kak, makasih",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "ok min, thanks",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "ok kak, makasih untuk infonya",
+        "intent"  : "closing",
+        "entities": []
+      },
+      {
+        "text"    : "ok min, terimakasih banyak",
+        "intent"  : "closing",
+        "entities": []
       }
     ]
   }

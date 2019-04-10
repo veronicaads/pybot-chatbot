@@ -1,47 +1,47 @@
 %YAML 1.1
 ---
 actions:
-- action_reply_tanya_harga
-- utter_reply_lokasi_olshop
-- utter_penjelasan_material
-- utter_unclear
-- utter_estimated
-- utter_reply_harga
-- utter_reply_lama_pengerjaan
-- action_check_stock
-- utter_reply_bank_available
-- action_reply_lokasi_tersedia
-- action_save_lokasi
-- utter_reply_ketersediaan_produk_tersedia
-- action_save_smartphone_type
-- action_reply_bank_tersedia
 - utter_tanya_pertanyaan_lain
+- action_reply_lama_pengerjaan
+- utter_reply_bank_available
+- utter_reply_lama_pengerjaan
+- action_reply_ongkir
+- action_reply_lokasi_tersedia
+- utter_ketersediaan_logistik
+- action_reply_bank_tersedia
+- utter_reply_harga
+- action_save_smartphone_type
+- action_reply_logistik_tersedia
+- utter_reply_ketersediaan_produk_tersedia
+- utter_reply_ketersediaan_produk_tidak_tersedia
+- utter_reply_lokasi_olshop
+- action_check_stock
+- action_save_lokasi
+- utter_penjelasan_material
 - action_save_material
 - utter_nego_harga
+- utter_estimated
+- action_reply_tanya_harga
 - utter_closing
-- utter_reply_ketersediaan_produk_tidak_tersedia
-- action_reply_logistik_tersedia
-- utter_ketersediaan_logistik
-- action_reply_ongkir
-- action_reply_lama_pengerjaan
+- utter_unclear
 - utter_explain_ask_smartphone_type
 entities:
-- Lokasi
-- Jenis_HP
 - Logistik
-- Material
 - Nama_Bank
+- Jenis_HP
+- Material
+- Lokasi
 intents:
-- tanya_info_lokasi_olshop
+- closing
+- statment_logistik
+- tanya_ketersediaan_produk
 - greeting
 - tanya_bank_pembayaran
-- tanya_ketersediaan_produk
+- tanya_ongkos_kirim
+- tanya_info_lokasi_olshop
 - tanya_lama_pengerjaan
 - tanya_harga_produk
 - tanya_material_produk
-- tanya_ongkos_kirim
-- statment_logistik
-- closing
 - tanya_logistik
 - tanya_lama_pengiriman
 slots:
@@ -75,15 +75,13 @@ templates:
   utter_reply_bank_available:
   - text: Bank {NamaBank} dengan nomor rekening {Norek} atas nama {AtasNama}
   utter_reply_harga:
-  - text: Harga untuk tipe {JenisHP} dengan jenis {Material} sebesar {Harga} kak.
-      Silahkan ketik keyword 'ORDER' (tanpa kutip) kak :) jika ingin melakukan pemesanan.
+  - text: Harga untuk tipe {JenisHP} dengan jenis {Material} sebesar {Harga} kak.r
       Ada yang ingin ditanyakan lagi kak ?
   utter_reply_ketersediaan_produk_tersedia:
-  - text: Custom case untuk handphone dengan tipe {JenisHP}  saat ini tersedia. Silahkan
-      lakukan order dengan menuliskan keyword 'ORDER' (tanpa kutip) kak :) Material
+  - text: Custom case untuk handphone dengan tipe {JenisHP}  saat ini tersedia. Material
       dan Harga yang tersedia sesuai keterangan dibawah ini kak!
   utter_reply_ketersediaan_produk_tersedia_list:
-  - text: Material {Material} dengan harga {Harga} tersedia
+  - text: Material {Material} dengan harga {Harga} tersedia dengan ID {IDProduk}
   utter_reply_ketersediaan_produk_tidak_tersedia:
   - text: Maaf kak, custom case untuk handphone dengan tipe {JenisHP}  saat ini sedang
       tidak tersedia. Kami akan melakukan restock barang, mohon menghubungi kami kembali

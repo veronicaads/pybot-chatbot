@@ -1,59 +1,59 @@
 %YAML 1.1
 ---
 actions:
-- action_save_smartphone_type
-- utter_estimated
-- utter_explain_ask_smartphone_type
-- action_save_material
-- utter_penjelasan_material
 - utter_tanya_pertanyaan_lain
-- action_reply_lokasi_tersedia
-- utter_reply_ketersediaan_produk_tidak_tersedia
-- action_reply_tanya_harga
-- utter_reply_harga
-- action_reply_bank_tersedia
-- utter_nego_harga
-- action_check_stock
-- utter_ketersediaan_logistik
-- action_save_lokasi
-- utter_reply_bank_available
-- utter_reply_ketersediaan_produk_tersedia
-- utter_unclear
-- utter_reply_lama_pengerjaan
-- action_reply_logistik_tersedia
 - action_reply_lama_pengerjaan
-- utter_reply_lokasi_olshop
+- utter_reply_bank_available
+- utter_reply_lama_pengerjaan
 - action_reply_ongkir
+- action_reply_lokasi_tersedia
+- utter_ketersediaan_logistik
+- action_reply_bank_tersedia
+- utter_reply_harga
+- action_save_smartphone_type
+- action_reply_logistik_tersedia
+- utter_reply_ketersediaan_produk_tersedia
+- utter_reply_ketersediaan_produk_tidak_tersedia
+- utter_reply_lokasi_olshop
+- action_check_stock
+- action_save_lokasi
+- utter_penjelasan_material
+- action_save_material
+- utter_nego_harga
+- utter_estimated
+- action_reply_tanya_harga
 - utter_closing
+- utter_unclear
+- utter_explain_ask_smartphone_type
 config:
   store_entities_as_slots: true
 entities:
-- Jenis_HP
-- Nama_Bank
-- Lokasi
 - Logistik
+- Nama_Bank
+- Jenis_HP
 - Material
+- Lokasi
 forms: []
 intents:
-- tanya_ketersediaan_produk:
-    use_entities: true
-- tanya_harga_produk:
-    use_entities: true
-- tanya_lama_pengerjaan:
-    use_entities: true
-- tanya_material_produk:
-    use_entities: true
-- greeting:
-    use_entities: true
-- tanya_ongkos_kirim:
+- closing:
     use_entities: true
 - statment_logistik:
     use_entities: true
-- closing:
+- tanya_ketersediaan_produk:
+    use_entities: true
+- greeting:
     use_entities: true
 - tanya_bank_pembayaran:
     use_entities: true
+- tanya_ongkos_kirim:
+    use_entities: true
 - tanya_info_lokasi_olshop:
+    use_entities: true
+- tanya_lama_pengerjaan:
+    use_entities: true
+- tanya_harga_produk:
+    use_entities: true
+- tanya_material_produk:
     use_entities: true
 - tanya_logistik:
     use_entities: true
@@ -96,15 +96,13 @@ templates:
   utter_reply_bank_available:
   - text: Bank {NamaBank} dengan nomor rekening {Norek} atas nama {AtasNama}
   utter_reply_harga:
-  - text: Harga untuk tipe {JenisHP} dengan jenis {Material} sebesar {Harga} kak.
-      Silahkan ketik keyword 'ORDER' (tanpa kutip) kak :) jika ingin melakukan pemesanan.
+  - text: Harga untuk tipe {JenisHP} dengan jenis {Material} sebesar {Harga} kak.r
       Ada yang ingin ditanyakan lagi kak ?
   utter_reply_ketersediaan_produk_tersedia:
-  - text: Custom case untuk handphone dengan tipe {JenisHP}  saat ini tersedia. Silahkan
-      lakukan order dengan menuliskan keyword 'ORDER' (tanpa kutip) kak :) Material
+  - text: Custom case untuk handphone dengan tipe {JenisHP}  saat ini tersedia. Material
       dan Harga yang tersedia sesuai keterangan dibawah ini kak!
   utter_reply_ketersediaan_produk_tersedia_list:
-  - text: Material {Material} dengan harga {Harga} tersedia
+  - text: Material {Material} dengan harga {Harga} tersedia dengan ID {IDProduk}
   utter_reply_ketersediaan_produk_tidak_tersedia:
   - text: Maaf kak, custom case untuk handphone dengan tipe {JenisHP}  saat ini sedang
       tidak tersedia. Kami akan melakukan restock barang, mohon menghubungi kami kembali
@@ -118,6 +116,8 @@ templates:
   utter_tanya_pertanyaan_lain:
   - text: Apakah ada hal lain yang kami bisa bantu? Seperti pertanyaan mengenai pembayaran
       maupun pengiriman ataupun mengenai produk ?
+  utter_topher:
+  - text: Kasian deh topher
   utter_unclear:
   - text: Maaf untuk saat ini, sistem tidak memahami maksud kakak. Mohon tunggu karena
       pesan akan diteruskan kepada admin untuk ditanggapi.

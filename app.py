@@ -11,6 +11,15 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
 
+# import sys
+# sys.path.append("/root/skripsweet_adminpybot")
+
+# from django.conf import settings
+
+# settings.configure()
+
+# from skripsweet_adminpage.models import *
+
 from rasa_core.agent import Agent
 from rasa_nlu.model import Trainer, Metadata
 from rasa_core.interpreter import RasaNLUInterpreter
@@ -19,8 +28,6 @@ from rasa_core.utils import EndpointConfig
 nlu_interpreter = RasaNLUInterpreter('models/nlu/default/chat')
 action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
 agent = Agent.load('./models/dialogue', interpreter=nlu_interpreter, action_endpoint = action_endpoint)
-
-
 
 app = Flask(__name__)
 # get LINE_CHANNEL_ACCESS_TOKEN from your environment variable
@@ -62,6 +69,22 @@ def handle_message(event):
     message_res = []
     for response in responses:
         print(response)
+        # if response['text'] == 'Maaf untuk saat ini, sistem tidak memahami maksud kakak. Mohon tunggu karena pesan akan diteruskan kepada admin untuk ditanggapi.':
+        #     print('Masuk')
+        #     cr = Chatroom()
+        #     cr.idchatroom = str(int(1 if Chatroom.objects.all().last() == None else Chatroom.objects.all().last().idchatroom) + 1)
+        #     cr.profilename = profile.user_id
+        #     cr.save()
+        #     ch = Chat()
+        #     ch.idchat = str(int(1 if Chat.objects.all().last() == None else Chat.objects.all().last().idchat) + 1)
+        #     ch.message = user_message
+        #     ch.timestamp = str(datetime.datetime.now()).split()
+        #     ch.status = 0
+        #     ch.save()
+        #     chis = ChatHistory()
+        #     chis.idchat = ch.idchat
+        #     chis.idchatroom = ch.idchatroom
+        #     chis.save()  
         message_res.append(response['text'])
     message_res = "\n".join(message_res)
     line_bot_api.reply_message(

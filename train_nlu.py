@@ -21,15 +21,6 @@ def train (data, config_file, model_dir):
     trainer.train(training_data)
     model_directory = trainer.persist(model_dir, fixed_model_name = 'chat')
 
-def run():
-    interpreter = Interpreter.load('./models/nlu/default/chat')
-    print(interpreter.parse('hi sis'))
-    print(interpreter.parse('misi sis'))
-    print(interpreter.parse('ada case oppo a37s ?'))
-    print(interpreter.parse('halo sis'))
-    print(interpreter.parse('halo kak'))
-    print(interpreter.parse('saya mau tanya custom case samsung s7 ada ?'))
-    print(interpreter.parse('kak apa ada custom case iphone 7?'))
 # Training
 #------------
 if __name__ == '__main__':

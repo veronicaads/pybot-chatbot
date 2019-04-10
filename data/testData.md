@@ -13,6 +13,7 @@
 - oke
 - oke terimakasih
 - nanti saya infokan lagi ya kak
+- ok terimakasih
 
 ## intent:greeting
 - haloo kakak mimin
@@ -43,16 +44,11 @@
 - permisi
 - siang min
 - selamat sore
-- sore kak
 - halo min
 - haloo siang
 - selamat malam
-- selamat malam
 - selamat pagi min
 - assalamualaikum
-- siang admin cakep
-- haloo
-- Halo
 - selamat sore
 - halo sore kak
 - sore kak
@@ -61,17 +57,17 @@
 - malam sis
 - halo
 - siang mimin
-- HALO MIN
-- halo min
-- halo
-- malam sis
 - misi gan
 - halo admin
 - halo mas
+- halo
+- hallo
 
 ## intent:statment_logistik
 - [jne](Logistik) saja kak
-- [jne](Logistik) saja kak
+- [tiki](Logistik) boleh
+- [pos](Logistik) saja
+- saya mau pakai [jne](Logistik)
 
 ## intent:tanya_bank_pembayaran
 - Sis, punya [BCA](Nama_Bank) tidak ?
@@ -84,6 +80,9 @@
 - sis punya [BCA](Nama_Bank) tidak
 - sis punya [BCA](Nama_Bank) tidak?
 - pembayaran via apa saja kak?
+- bisa bayar pakai apa aja
+- bayarnya dapat menggunakan apa ka?
+- bayarnya bisa menggunakan apa saja ka?
 
 ## intent:tanya_harga_produk
 - Harga berapa ?
@@ -121,11 +120,10 @@
 - Ini lokasi tokonya di [Jakarta](Lokasi) mas ?
 - pengiriman dari mana sis ?
 - sis di [Jakarta](Lokasi) kan ?
-- sis di [Jakarta](Lokasi) kan ?
 - ini lokasi tokonya di jakarta mas ?
 
 ## intent:tanya_ketersediaan_produk
-- nexian a1200[](Jenis_HP:nexian a1200)
+- [nexian a1200](Jenis_HP)
 - halo sis jual casing hape [samsung s7](Jenis_HP) ?
 - saya mau pesan case [htc u11](Jenis_HP)
 - saya mau pesan case [vivo v1](Jenis_HP)
@@ -228,10 +226,14 @@
 - ksk mau tanya case untuk [oppo r7s](Jenis_HP) ada?
 - case custom untuk [Asus Zenfone Max Pro M2](Jenis_HP) ada ?
 - mau tanya custom [softcase](Material) untuk handphone [samsung j7 prime](Jenis_HP) dan [samsung j5](Jenis_HP) ada ?
-- kalau buat case handphone untuk [oppo realme c1](Jenis_HP) bisa mas ?
-- kalau buat case handphone untuk [oppo realme c1](Jenis_HP) bisa mas ?
-- kalau buat case handphone untuk [oppo realme c1](Jenis_HP) bisa mas ?
-- kalau buat case handphone untuk [oppo realme c1](Jenis_HP) bisa mas ?
+- [oppo f7](Jenis_HP)
+- [iphone 7](Jenis_HP)
+- [iphone 6](Jenis_HP)
+- [Iphone 7](Jenis_HP)
+- [Iphone 8](Jenis_HP)
+- [vivo v1](Jenis_HP)
+- [samsung s7](Jenis_HP)
+- [Samsung a7](Jenis_HP)
 
 ## intent:tanya_lama_pengerjaan
 - berapa lama pengerjaan 3dcase nya ?[3dcase](Material)
@@ -261,6 +263,8 @@
 - berapa lama jadinya kak?
 - berapa lama jadinya [anticrack](Material) ?
 - berapa lama jadinya [softcase](Material) ?
+- kira-kira jadinya berapa lama [softcase](Material) ?
+- [softcase](Material) kira-kira jadinya berapa lama?
 
 ## intent:tanya_lama_pengiriman
 - Sampenya berapa hari ?
@@ -312,6 +316,7 @@
 - ongkos kirim ke [bekasi](Lokasi) berapa ?
 - ongkos kirim ke [jakarta barat](Lokasi) berapa ya
 - ongkos kirim ke [surabaya](Lokasi) berapa kak?
+- ongkir ke [surabaya](Lokasi) berapa?
 
 ## intent:tanya_resi
 - mau minta no resi boleh ?

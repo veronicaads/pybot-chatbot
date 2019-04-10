@@ -36,19 +36,19 @@ class ActionCheckStock(Action):
             return [UserUtteranceReverted()]
         with psycopg2.connect(DSN) as conn:
             with conn.cursor() as curs:
-                curs.execute(f"""SELECT stock,material_hp,harga FROM produk WHERE concat(merkhp, ' ', tipehp) LIKE '%{jenishp.lower()}%' """)
+                curs.execute(f"""SELECT stock,material_hp,harga,idproduk FROM skripsweet_adminpage_produk WHERE concat(merkhp, ' ', tipehp) LIKE '%{jenishp.lower()}%' """)
                 result = curs.fetchall()
+                print(result)
                 if len(result) == 0:
                     dispatcher.utter_template("utter_reply_ketersediaan_produk_tidak_tersedia",tracker,Jenis_HP=jenishps)
                 else:
                     for result_row in result:
                         stock = result_row[0]
                         if int(stock) > 0:
-                            dispatcher.utter_template("utter_reply_ketersediaan_produk_tersedia_list",tracker,Material=result_row[1],Harga=result_row[2])           
+                            dispatcher.utter_template("utter_reply_ketersediaan_produk_tersedia_list",tracker,Material=result_row[1],Harga=result_row[2],IDProduk=result_row[3])           
                         else:
                             dispatcher.utter_template("utter_reply_ketersediaan_produk_tidak_tersedia",tracker,Jenis_HP=jenishp) 
                             return []   
-                    dispatcher.utter_message("Jika kakak ingin memesan custom case silahkan ketikan keyword 'ORDER' (tanpa kutip) ")
         return []
 
 class ActionSaveMaterial(Action):
@@ -74,7 +74,8 @@ class ActionReplyLamaPengerjaan(Action):
             return [UserUtteranceReverted()]
         with psycopg2.connect(DSN) as conn:
             with conn.cursor() as curs:
-                curs.execute(f"""SELECT lama_pengerjaan FROM produk WHERE concat(merkhp, ' ', tipehp) LIKE '%{jenishp.lower()}%' AND material_hp LIKE '%{materials.lower()}%'  """)
+                curs.execute(f"""SELECT lama_pengerjaan FROM skripsweet_adminpage_produk WHERE concat(merkhp, ' ', tipehp) LIKE 
+                '%{jenishp.lower()}%' AND material_hp LIKE '%{materials.lower()}%'  """)
                 result = curs.fetchone()
                 print(result)
                 if result is None:
@@ -99,7 +100,8 @@ class ActionReplyDiTanyaHarga(Action):
             return [UserUtteranceReverted()]
         with psycopg2.connect(DSN) as conn:
             with conn.cursor() as curs:
-                curs.execute(f"""SELECT harga FROM produk WHERE concat(merkhp, ' ', tipehp) LIKE '%{jenishp.lower()}%' AND material_hp LIKE '%{materials.lower()}%' AND stock > 0 """)
+                curs.execute(f"""SELECT harga FROM skripsweet_adminpage_produk WHERE concat(merkhp, ' ', tipehp) LIKE '%{jenishp.lower()}%' 
+                AND material_hp LIKE '%{materials.lower()}%' AND stock > 0 """)
                 result = curs.fetchone()
                 if result is None:
                     dispatcher.utter_message("Mohon maaf, material yang kakak tanyakan sedang tidak tersedia.")
@@ -118,7 +120,7 @@ class ActionReplyBank(Action):
         if not namabank:
             with psycopg2.connect(DSN) as conn:
                 with conn.cursor() as curs:
-                    curs.execute(f"""SELECT namabank,norek,atasnama FROM bank """)
+                    curs.execute(f"""SELECT namabank,norek,atasnama FROM skripsweet_adminpage_bank """)
                     result = curs.fetchall()
                     if result is None:
                         dispatcher.utter_message("Kami belum memiliki bank tersebut kak")
@@ -129,7 +131,7 @@ class ActionReplyBank(Action):
         else :
              with psycopg2.connect(DSN) as conn:
                 with conn.cursor() as curs:
-                    curs.execute(f"""SELECT namabank,norek,atasnama FROM bank WHERE namabank LIKE '%{namabank.lower()}%' """)
+                    curs.execute(f"""SELECT namabank,norek,atasnama FROM skripsweet_adminpage_bank WHERE namabank LIKE '%{namabank.lower()}%' """)
                     result = curs.fetchone()
                     if len(result) == 0:
                         dispatcher.utter_message("Maaf, saat ini kami tidak memiliki rekening bank yang kakak minta")
@@ -145,7 +147,7 @@ class ActionReplyInfoOlshop(Action):
     def run(self, dispatcher, tracker, domain):
         with psycopg2.connect(DSN) as conn:
             with conn.cursor() as curs:
-                curs.execute(f"""SELECT kota_olshop, provinsi_olshop FROM info_olshop """)
+                curs.execute(f"""SELECT kota_olshop, provinsi_olshop FROM skripsweet_adminpage_info_olshop """)
                 result = curs.fetchone()
                 dispatcher.utter_template("utter_reply_lokasi_olshop",tracker,Kota=result[0],Provinsi=result[1])
                 return []
@@ -157,7 +159,7 @@ class ActionReplyInfoLogistik(Action):
     def run(self, dispatcher, tracker, domain):
         with psycopg2.connect(DSN) as conn:
             with conn.cursor() as curs:
-                curs.execute(f"""SELECT namalogistik FROM logistik """)
+                curs.execute(f"""SELECT namalogistik FROM skripsweet_adminpage_logistik """)
                 result = curs.fetchall()
                 if result is not None:
                     dispatcher.utter_message("Saat ini kami menggunakan jasa pengiriman : ")
@@ -221,7 +223,8 @@ class ActionReplyJawabOngkir(Action):
                 etd = jsonpath.jsonpath(json_strings,"$..results..cost..etd")
                 str_estimated = ' '.join(etd)
                 dispatcher.utter_message(str(str_estimated))
-                dispatcher.utter_message("Untuk jenis servis yang tersedia, ongkos kirim dan estimasi sampai silahkan baca menurun sesuai data dibawah ini ya kak :)")
+                dispatcher.utter_message("Untuk jenis servis yang tersedia, ongkos kirim dan estimasi sampai silahkan baca menurun sesuai data 
+                dibawah ini ya kak :)")
                 dispatcher.utter_message(str(str_service))
                 dispatcher.utter_message(str(cost))
                 dispatcher.utter_template("utter_estimated",tracker,Estimated=str(str_estimated))

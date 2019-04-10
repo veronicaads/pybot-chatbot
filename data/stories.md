@@ -701,3 +701,22 @@
 * tanya_bank_pembayaran
     - action_reply_bank_tersedia
 
+## Generated Story -5005423439897768994
+* greeting
+    - utter_explain_ask_smartphone_type
+* tanya_ketersediaan_produk{"Jenis_HP": "iphone 6"}
+    - action_save_smartphone_type
+    - slot{"JenisHP": "iphone 6"}
+    - action_check_stock
+* tanya_bank_pembayaran
+    - action_reply_bank_tersedia
+* tanya_ongkos_kirim{"Lokasi": "surabaya"}
+    - slot{"Lokasi": "surabaya"}
+    - action_save_lokasi
+    - slot{"Lokasi": "surabaya"}
+    - action_reply_ongkir
+* statment_logistik{"Logistik": "jne"}
+    - action_reply_ongkir
+* closing
+    - utter_closing
+

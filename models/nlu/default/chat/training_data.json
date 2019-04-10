@@ -58,6 +58,10 @@
         "text": "nanti saya infokan lagi ya kak"
       },
       {
+        "intent": "closing",
+        "text": "ok terimakasih"
+      },
+      {
         "intent": "greeting",
         "text": "haloo kakak mimin"
       },
@@ -171,10 +175,6 @@
       },
       {
         "intent": "greeting",
-        "text": "sore kak"
-      },
-      {
-        "intent": "greeting",
         "text": "halo min"
       },
       {
@@ -187,27 +187,11 @@
       },
       {
         "intent": "greeting",
-        "text": "selamat malam"
-      },
-      {
-        "intent": "greeting",
         "text": "selamat pagi min"
       },
       {
         "intent": "greeting",
         "text": "assalamualaikum"
-      },
-      {
-        "intent": "greeting",
-        "text": "siang admin cakep"
-      },
-      {
-        "intent": "greeting",
-        "text": "haloo"
-      },
-      {
-        "intent": "greeting",
-        "text": "Halo"
       },
       {
         "intent": "greeting",
@@ -243,22 +227,6 @@
       },
       {
         "intent": "greeting",
-        "text": "HALO MIN"
-      },
-      {
-        "intent": "greeting",
-        "text": "halo min"
-      },
-      {
-        "intent": "greeting",
-        "text": "halo"
-      },
-      {
-        "intent": "greeting",
-        "text": "malam sis"
-      },
-      {
-        "intent": "greeting",
         "text": "misi gan"
       },
       {
@@ -266,6 +234,18 @@
         "text": "halo admin"
       },
       {
+        "intent": "greeting",
+        "text": "halo mas"
+      },
+      {
+        "intent": "greeting",
+        "text": "halo"
+      },
+      {
+        "intent": "greeting",
+        "text": "hallo"
+      },
+      {
         "intent": "statment_logistik",
         "entities": [
           {
@@ -282,12 +262,36 @@
         "entities": [
           {
             "start": 0,
+            "end": 4,
+            "value": "tiki",
+            "entity": "Logistik"
+          }
+        ],
+        "text": "tiki boleh"
+      },
+      {
+        "intent": "statment_logistik",
+        "entities": [
+          {
+            "start": 0,
             "end": 3,
+            "value": "pos",
+            "entity": "Logistik"
+          }
+        ],
+        "text": "pos saja"
+      },
+      {
+        "intent": "statment_logistik",
+        "entities": [
+          {
+            "start": 15,
+            "end": 18,
             "value": "jne",
             "entity": "Logistik"
           }
         ],
-        "text": "jne saja kak"
+        "text": "saya mau pakai jne"
       },
       {
         "intent": "tanya_bank_pembayaran",
@@ -364,6 +368,22 @@
           }
         ],
         "text": "sis punya BCA tidak?"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "pembayaran via apa saja kak?"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "bisa bayar pakai apa aja"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "bayarnya dapat menggunakan apa ka?"
+      },
+      {
+        "intent": "tanya_bank_pembayaran",
+        "text": "bayarnya bisa menggunakan apa saja ka?"
       },
       {
         "intent": "tanya_harga_produk",
@@ -502,6 +522,18 @@
         "text": "untuk 1 unit harganya berapa?"
       },
       {
+        "intent": "tanya_harga_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "anticrack",
+            "entity": "Material"
+          }
+        ],
+        "text": "anticrack berapa harganya?"
+      },
+      {
         "intent": "tanya_info_lokasi_olshop",
         "entities": [
           {
@@ -543,19 +575,19 @@
       },
       {
         "intent": "tanya_info_lokasi_olshop",
-        "entities": [
-          {
-            "start": 7,
-            "end": 14,
-            "value": "Jakarta",
-            "entity": "Lokasi"
-          }
-        ],
-        "text": "sis di Jakarta kan ?"
+        "text": "ini lokasi tokonya di jakarta mas ?"
       },
       {
         "intent": "tanya_ketersediaan_produk",
-        "text": "nexian a1200[](Jenis_HP:nexian a1200)"
+        "entities": [
+          {
+            "start": 0,
+            "end": 12,
+            "value": "nexian a1200",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "nexian a1200"
       },
       {
         "intent": "tanya_ketersediaan_produk",
@@ -1791,13 +1823,97 @@
         "intent": "tanya_ketersediaan_produk",
         "entities": [
           {
-            "start": 32,
-            "end": 46,
-            "value": "oppo realme c1",
+            "start": 0,
+            "end": 7,
+            "value": "oppo f7",
             "entity": "Jenis_HP"
           }
         ],
-        "text": "kalau buat case handphone untuk oppo realme c1 bisa mas ?"
+        "text": "oppo f7"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "iphone 7",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "iphone 7"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "iphone 6",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "iphone 6"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Iphone 7",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "Iphone 7"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Iphone 8",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "Iphone 8"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "vivo v1",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "vivo v1"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "samsung s7",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "samsung s7"
+      },
+      {
+        "intent": "tanya_ketersediaan_produk",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "Samsung a7",
+            "entity": "Jenis_HP"
+          }
+        ],
+        "text": "Samsung a7"
       },
       {
         "intent": "tanya_lama_pengerjaan",
@@ -2022,6 +2138,54 @@
       {
         "intent": "tanya_lama_pengerjaan",
         "text": "berapa lama jadinya kak?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 20,
+            "end": 29,
+            "value": "anticrack",
+            "entity": "Material"
+          }
+        ],
+        "text": "berapa lama jadinya anticrack ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "softcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "berapa lama jadinya softcase ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 30,
+            "end": 38,
+            "value": "softcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "kira-kira jadinya berapa lama softcase ?"
+      },
+      {
+        "intent": "tanya_lama_pengerjaan",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "softcase",
+            "entity": "Material"
+          }
+        ],
+        "text": "softcase kira-kira jadinya berapa lama?"
       },
       {
         "intent": "tanya_lama_pengiriman",
@@ -2426,6 +2590,18 @@
         "text": "ongkos kirim ke surabaya berapa kak?"
       },
       {
+        "intent": "tanya_ongkos_kirim",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "surabaya",
+            "entity": "Lokasi"
+          }
+        ],
+        "text": "ongkir ke surabaya berapa?"
+      },
+      {
         "intent": "tanya_resi",
         "text": "mau minta no resi boleh ?"
       },
@@ -2464,6 +2640,18 @@
       {
         "intent": "tawar_harga",
         "text": "ada yang lebih murah tidak ?"
+      },
+      {
+        "intent": "khusus_topher_mau_curhat",
+        "text": "mau curhat dong"
+      },
+      {
+        "intent": "khusus_topher_mau_curhat",
+        "text": "topher galau"
+      },
+      {
+        "intent": "khusus_topher_mau_curhat",
+        "text": "cariin jodoh dong"
       }
     ],
     "regex_features": [],
