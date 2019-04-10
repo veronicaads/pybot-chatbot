@@ -14,6 +14,35 @@
 - oke terimakasih
 - nanti saya infokan lagi ya kak
 - ok terimakasih
+- Oke deh. Makasi ya hehehehe
+- Okeii
+- Waduh, baiklah ditunggu ya kak
+- oke deh
+- tidak, terimakasih
+- sudah cukup, terimakasih
+- terimakasih untuk infonya
+- thanks
+- ok thanks
+- oke terimakasih
+- ok terimakasih kak
+- tidak kak, makasih
+- oke terimakasih mas
+- oke thanks
+- ok thanks
+- oke
+- oke terimakasih
+- nanti saya infokan lagi ya kak
+- ok terimakasih
+- ok makasi
+- ok deh
+- sip thanks
+- terimakasih infonya
+- ok thanks
+- thankyou very much
+- oh okay
+- ok deh terimasih
+- makasi untuk infonya
+- nanti saya kabarin lagi ya
 
 ## intent:greeting
 - haloo kakak mimin
@@ -62,12 +91,55 @@
 - halo mas
 - halo
 - hallo
+- hellow
+- Hallo
+- Halo
+- siang kak
+- hallo kak
+- selamat pagi
+- selamat pagi kak
+- halo admin
+- assalamualaikum
+- selamat malam kak
+- halo
+- hallo sis
+- hallo mas
+- hi sis
+- kak mau nanya dong
+- Halo!
+- haloo
+- Halo kak mau tanya
+- hello
+- Haloo
+- Halo min
+- Mau tanya tanya dulu boleh?
+- Kak mo nanya dong
+- Hai
+- Halo sis
+- Assalamualaikum kak
+- Malam kak
+- Selamat pagi
+- Misi kak
+- hai kak
+- Permisi mas
+- Misi sis
+- halo
+- hai sis
+- siang sis
 
 ## intent:statment_logistik
 - [jne](Logistik) saja kak
 - [tiki](Logistik) boleh
 - [pos](Logistik) saja
 - saya mau pakai [jne](Logistik)
+- [JNE](Logistik) saja kak
+- [TIKI](Logistik) boleh
+- [Jne](Logistik) 
+- [Tiki](Logistik)
+- [POS](Logistik)
+- [Pos](Logistik) Indonesia saja kak
+- Saya mau [POS](Logistik) saja
+
 
 ## intent:tanya_bank_pembayaran
 - Sis, punya [BCA](Nama_Bank) tidak ?
@@ -121,6 +193,7 @@
 - pengiriman dari mana sis ?
 - sis di [Jakarta](Lokasi) kan ?
 - ini lokasi tokonya di jakarta mas ?
+
 
 ## intent:tanya_ketersediaan_produk
 - [nexian a1200](Jenis_HP)

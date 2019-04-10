@@ -25,4 +25,4 @@ def train (data, config_file, model_dir):
 #------------
 if __name__ == '__main__':
     train('data/testData.md', 'config/nlu_config.yml', 'models/nlu')
-    run()
+    

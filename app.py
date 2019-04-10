@@ -11,6 +11,10 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
 
+import psycopg2
+DSN = "postgres://postgres:root@localhost:5432/skripsweet"
+import datetime
+
 # import sys
 # sys.path.append("/root/skripsweet_adminpybot")
 
@@ -28,6 +32,7 @@ from rasa_core.utils import EndpointConfig
 nlu_interpreter = RasaNLUInterpreter('models/nlu/default/chat')
 action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
 agent = Agent.load('./models/dialogue', interpreter=nlu_interpreter, action_endpoint = action_endpoint)
+
 
 app = Flask(__name__)
 # get LINE_CHANNEL_ACCESS_TOKEN from your environment variable
@@ -63,28 +68,30 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    profile = line_bot_api.get_profile(event.source.user_id)
+    print(profile.display_name)
     print(event.message.text)
+    timestamp = datetime.datetime.now()
     user_message = event.message.text
     responses=agent.handle_message(user_message)
     message_res = []
     for response in responses:
         print(response)
-        # if response['text'] == 'Maaf untuk saat ini, sistem tidak memahami maksud kakak. Mohon tunggu karena pesan akan diteruskan kepada admin untuk ditanggapi.':
-        #     print('Masuk')
-        #     cr = Chatroom()
-        #     cr.idchatroom = str(int(1 if Chatroom.objects.all().last() == None else Chatroom.objects.all().last().idchatroom) + 1)
-        #     cr.profilename = profile.user_id
-        #     cr.save()
-        #     ch = Chat()
-        #     ch.idchat = str(int(1 if Chat.objects.all().last() == None else Chat.objects.all().last().idchat) + 1)
-        #     ch.message = user_message
-        #     ch.timestamp = str(datetime.datetime.now()).split()
-        #     ch.status = 0
-        #     ch.save()
-        #     chis = ChatHistory()
-        #     chis.idchat = ch.idchat
-        #     chis.idchatroom = ch.idchatroom
-        #     chis.save()  
+        if response['text'] == 'Maaf untuk saat ini, sistem tidak memahami maksud kakak. Mohon tunggu karena pesan akan diteruskan kepada admin untuk ditanggapi.':
+            with psycopg2.connect(DSN) as conn:
+                with conn.cursor() as curs:
+                    curs.execute(f"""SELECT MAX(idchat) FROM skripsweet_adminpage_chat """)
+                    idchat_res = curs.fetchone() 
+                    idchat = int(idchat_res[0]) + 1
+                    curs.execute(f"""SELECT idchatroom FROM skripsweet_adminpage_chatroom WHERE profilename LIKE '{profile.display_name}' """)
+                    idchatroom = curs.fetchone()  
+                    if idchatroom is None:
+                        curs.execute(f"""SELECT MAX(idchatroom) FROM skripsweet_adminpage_chatroom """)
+                        idchatroom_res = curs.fetchone() 
+                        idchatroom = int(idchatroom_res[0]) + 1
+                        curs.execute("INSERT INTO skripsweet_adminpage_chatroom (idchatroom,profilename) VALUES (%s,%s)",(idchatroom,profile.display_name))
+                    curs.execute("INSERT INTO skripsweet_adminpage_chat (idchat,message,timestamp,status) VALUES (%s,%s,%s,%s)",(idchat,user_message,timestamp,'0'))
+                    curs.execute("INSERT INTO skripsweet_adminpage_chathistory (idchatroom_id,idchat_id) VALUES (%s,%s)",(idchatroom,idchat))
         message_res.append(response['text'])
     message_res = "\n".join(message_res)
     line_bot_api.reply_message(

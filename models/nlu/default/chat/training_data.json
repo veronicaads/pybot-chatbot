@@ -62,6 +62,122 @@
         "text": "ok terimakasih"
       },
       {
+        "intent": "closing",
+        "text": "Oke deh. Makasi ya hehehehe"
+      },
+      {
+        "intent": "closing",
+        "text": "Okeii"
+      },
+      {
+        "intent": "closing",
+        "text": "Waduh, baiklah ditunggu ya kak"
+      },
+      {
+        "intent": "closing",
+        "text": "oke deh"
+      },
+      {
+        "intent": "closing",
+        "text": "tidak, terimakasih"
+      },
+      {
+        "intent": "closing",
+        "text": "sudah cukup, terimakasih"
+      },
+      {
+        "intent": "closing",
+        "text": "terimakasih untuk infonya"
+      },
+      {
+        "intent": "closing",
+        "text": "thanks"
+      },
+      {
+        "intent": "closing",
+        "text": "ok thanks"
+      },
+      {
+        "intent": "closing",
+        "text": "oke terimakasih"
+      },
+      {
+        "intent": "closing",
+        "text": "ok terimakasih kak"
+      },
+      {
+        "intent": "closing",
+        "text": "tidak kak, makasih"
+      },
+      {
+        "intent": "closing",
+        "text": "oke terimakasih mas"
+      },
+      {
+        "intent": "closing",
+        "text": "oke thanks"
+      },
+      {
+        "intent": "closing",
+        "text": "ok thanks"
+      },
+      {
+        "intent": "closing",
+        "text": "oke"
+      },
+      {
+        "intent": "closing",
+        "text": "oke terimakasih"
+      },
+      {
+        "intent": "closing",
+        "text": "nanti saya infokan lagi ya kak"
+      },
+      {
+        "intent": "closing",
+        "text": "ok terimakasih"
+      },
+      {
+        "intent": "closing",
+        "text": "ok makasi"
+      },
+      {
+        "intent": "closing",
+        "text": "ok deh"
+      },
+      {
+        "intent": "closing",
+        "text": "sip thanks"
+      },
+      {
+        "intent": "closing",
+        "text": "terimakasih infonya"
+      },
+      {
+        "intent": "closing",
+        "text": "ok thanks"
+      },
+      {
+        "intent": "closing",
+        "text": "thankyou very much"
+      },
+      {
+        "intent": "closing",
+        "text": "oh okay"
+      },
+      {
+        "intent": "closing",
+        "text": "ok deh terimasih"
+      },
+      {
+        "intent": "closing",
+        "text": "makasi untuk infonya"
+      },
+      {
+        "intent": "closing",
+        "text": "nanti saya kabarin lagi ya"
+      },
+      {
         "intent": "greeting",
         "text": "haloo kakak mimin"
       },
@@ -246,6 +362,146 @@
         "text": "hallo"
       },
       {
+        "intent": "greeting",
+        "text": "hellow"
+      },
+      {
+        "intent": "greeting",
+        "text": "Hallo"
+      },
+      {
+        "intent": "greeting",
+        "text": "Halo"
+      },
+      {
+        "intent": "greeting",
+        "text": "siang kak"
+      },
+      {
+        "intent": "greeting",
+        "text": "hallo kak"
+      },
+      {
+        "intent": "greeting",
+        "text": "selamat pagi"
+      },
+      {
+        "intent": "greeting",
+        "text": "selamat pagi kak"
+      },
+      {
+        "intent": "greeting",
+        "text": "halo admin"
+      },
+      {
+        "intent": "greeting",
+        "text": "assalamualaikum"
+      },
+      {
+        "intent": "greeting",
+        "text": "selamat malam kak"
+      },
+      {
+        "intent": "greeting",
+        "text": "halo"
+      },
+      {
+        "intent": "greeting",
+        "text": "hallo sis"
+      },
+      {
+        "intent": "greeting",
+        "text": "hallo mas"
+      },
+      {
+        "intent": "greeting",
+        "text": "hi sis"
+      },
+      {
+        "intent": "greeting",
+        "text": "kak mau nanya dong"
+      },
+      {
+        "intent": "greeting",
+        "text": "Halo!"
+      },
+      {
+        "intent": "greeting",
+        "text": "haloo"
+      },
+      {
+        "intent": "greeting",
+        "text": "Halo kak mau tanya"
+      },
+      {
+        "intent": "greeting",
+        "text": "hello"
+      },
+      {
+        "intent": "greeting",
+        "text": "Haloo"
+      },
+      {
+        "intent": "greeting",
+        "text": "Halo min"
+      },
+      {
+        "intent": "greeting",
+        "text": "Mau tanya tanya dulu boleh?"
+      },
+      {
+        "intent": "greeting",
+        "text": "Kak mo nanya dong"
+      },
+      {
+        "intent": "greeting",
+        "text": "Hai"
+      },
+      {
+        "intent": "greeting",
+        "text": "Halo sis"
+      },
+      {
+        "intent": "greeting",
+        "text": "Assalamualaikum kak"
+      },
+      {
+        "intent": "greeting",
+        "text": "Malam kak"
+      },
+      {
+        "intent": "greeting",
+        "text": "Selamat pagi"
+      },
+      {
+        "intent": "greeting",
+        "text": "Misi kak"
+      },
+      {
+        "intent": "greeting",
+        "text": "hai kak"
+      },
+      {
+        "intent": "greeting",
+        "text": "Permisi mas"
+      },
+      {
+        "intent": "greeting",
+        "text": "Misi sis"
+      },
+      {
+        "intent": "greeting",
+        "text": "halo"
+      },
+      {
+        "intent": "greeting",
+        "text": "hai sis"
+      },
+      {
+        "intent": "greeting",
+        "text": "siang sis"
+      },
+      {
         "intent": "statment_logistik",
         "entities": [
           {
@@ -292,6 +548,90 @@
           }
         ],
         "text": "saya mau pakai jne"
+      },
+      {
+        "intent": "statment_logistik",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "JNE",
+            "entity": "Logistik"
+          }
+        ],
+        "text": "JNE saja kak"
+      },
+      {
+        "intent": "statment_logistik",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "TIKI",
+            "entity": "Logistik"
+          }
+        ],
+        "text": "TIKI boleh"
+      },
+      {
+        "intent": "statment_logistik",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Jne",
+            "entity": "Logistik"
+          }
+        ],
+        "text": "Jne"
+      },
+      {
+        "intent": "statment_logistik",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Tiki",
+            "entity": "Logistik"
+          }
+        ],
+        "text": "Tiki"
+      },
+      {
+        "intent": "statment_logistik",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "POS",
+            "entity": "Logistik"
+          }
+        ],
+        "text": "POS"
+      },
+      {
+        "intent": "statment_logistik",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Pos",
+            "entity": "Logistik"
+          }
+        ],
+        "text": "Pos Indonesia saja kak"
+      },
+      {
+        "intent": "statment_logistik",
+        "entities": [
+          {
+            "start": 9,
+            "end": 12,
+            "value": "POS",
+            "entity": "Logistik"
+          }
+        ],
+        "text": "Saya mau POS saja"
       },
       {
         "intent": "tanya_bank_pembayaran",
@@ -2640,18 +2980,6 @@
       {
         "intent": "tawar_harga",
         "text": "ada yang lebih murah tidak ?"
-      },
-      {
-        "intent": "khusus_topher_mau_curhat",
-        "text": "mau curhat dong"
-      },
-      {
-        "intent": "khusus_topher_mau_curhat",
-        "text": "topher galau"
-      },
-      {
-        "intent": "khusus_topher_mau_curhat",
-        "text": "cariin jodoh dong"
       }
     ],
     "regex_features": [],

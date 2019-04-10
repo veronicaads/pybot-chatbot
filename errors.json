@@ -1,5 +1,53 @@
 [
     {
+        "text": "Aku pakai Samsung J7 Prime",
+        "intent": "tanya_ketersediaan_produk",
+        "intent_prediction": {
+            "name": "tanya_logistik",
+            "confidence": 0.4399164319038391
+        }
+    },
+    {
+        "text": "Berapa lama jadinya ?",
+        "intent": "tanya_harga_produk",
+        "intent_prediction": {
+            "name": "tanya_lama_pengerjaan",
+            "confidence": 0.9600853323936462
+        }
+    },
+    {
+        "text": "Price list nya boleh minta ?",
+        "intent": "tanya_harga_produk",
+        "intent_prediction": {
+            "name": "tanya_resi",
+            "confidence": 0.825447142124176
+        }
+    },
+    {
+        "text": "Custome 3D Case ada ?",
+        "intent": "tanya_material_produk",
+        "intent_prediction": {
+            "name": "tanya_ketersediaan_produk",
+            "confidence": 0.9139404892921448
+        }
+    },
+    {
+        "text": "Hardcase samsung j7 prime",
+        "intent": "tanya_material_produk",
+        "intent_prediction": {
+            "name": "tanya_ketersediaan_produk",
+            "confidence": 0.9550527334213257
+        }
+    },
+    {
+        "text": "anticrack berapa harganya?",
+        "intent": "tanya_material_produk",
+        "intent_prediction": {
+            "name": "tanya_harga_produk",
+            "confidence": 0.8543880581855774
+        }
+    },
+    {
         "text": "Transfer kemana ?",
         "intent": "tanya_bank_pembayaran",
         "intent_prediction": {
@@ -8,43 +56,107 @@
         }
     },
     {
-        "text": "Bisa nego tidak kak",
-        "intent": "tawar_harga",
+        "text": "Pembayaran lewat apa?",
+        "intent": "tanya_bank_pembayaran",
         "intent_prediction": {
-            "name": "closing",
-            "confidence": 0.6630671620368958
+            "name": "tanya_logistik",
+            "confidence": 0.7175703644752502
         }
     },
     {
-        "text": "Diskon gak",
-        "intent": "tawar_harga",
-        "intent_prediction": {
-            "name": "greeting",
-            "confidence": 0.8360613584518433
-        }
-    },
-    {
-        "text": "thankyou",
-        "intent": "closing",
+        "text": "Transfer kemana",
+        "intent": "tanya_bank_pembayaran",
         "intent_prediction": {
             "name": "",
             "confidence": 0.0
         }
     },
     {
-        "text": "makasih min",
-        "intent": "closing",
+        "text": "Cara bayar?",
+        "intent": "tanya_bank_pembayaran",
         "intent_prediction": {
             "name": "greeting",
-            "confidence": 0.6665235161781311
+            "confidence": 0.8274326324462891
         }
     },
     {
-        "text": "thankyou kak",
-        "intent": "closing",
+        "text": "Bayarnya kemana ya?",
+        "intent": "tanya_bank_pembayaran",
         "intent_prediction": {
-            "name": "greeting",
-            "confidence": 0.8030924797058105
+            "name": "closing",
+            "confidence": 0.7017520666122437
+        }
+    },
+    {
+        "text": "Pengiriman bagaimana ?",
+        "intent": "tanya_logistik",
+        "intent_prediction": {
+            "name": "closing",
+            "confidence": 0.6363045573234558
+        }
+    },
+    {
+        "text": "Pengiriman bisa melalui apa",
+        "intent": "tanya_logistik",
+        "intent_prediction": {
+            "name": "tanya_bank_pembayaran",
+            "confidence": 0.7999352216720581
+        }
+    },
+    {
+        "text": "Pengiriman via apa?",
+        "intent": "tanya_logistik",
+        "intent_prediction": {
+            "name": "tanya_bank_pembayaran",
+            "confidence": 0.8825598955154419
+        }
+    },
+    {
+        "text": "pengerjaan berapa hari?",
+        "intent": "tanya_lama_pengerjaan",
+        "intent_prediction": {
+            "name": "tanya_lama_pengiriman",
+            "confidence": 0.7670479416847229
+        }
+    },
+    {
+        "text": "pengiriman kira-kira berapa lama?",
+        "intent": "tanya_lama_pengiriman",
+        "intent_prediction": {
+            "name": "tanya_lama_pengerjaan",
+            "confidence": 0.9552420377731323
+        }
+    },
+    {
+        "text": "berapa lama sampainya?",
+        "intent": "tanya_lama_pengiriman",
+        "intent_prediction": {
+            "name": "tanya_lama_pengerjaan",
+            "confidence": 0.9588671922683716
+        }
+    },
+    {
+        "text": "Kalau beli 2 ad diskon ga?",
+        "intent": "tawar_harga",
+        "intent_prediction": {
+            "name": "tanya_ketersediaan_produk",
+            "confidence": 0.8279649019241333
+        }
+    },
+    {
+        "text": "yg softcase bisa diskon kak ?",
+        "intent": "tawar_harga",
+        "intent_prediction": {
+            "name": "tanya_material_produk",
+            "confidence": 0.9328349232673645
+        }
+    },
+    {
+        "text": "bisa dapat diskon tidak",
+        "intent": "tawar_harga",
+        "intent_prediction": {
+            "name": "tanya_bank_pembayaran",
+            "confidence": 0.8911727666854858
         }
     }
 ]

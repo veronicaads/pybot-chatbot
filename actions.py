@@ -223,8 +223,7 @@ class ActionReplyJawabOngkir(Action):
                 etd = jsonpath.jsonpath(json_strings,"$..results..cost..etd")
                 str_estimated = ' '.join(etd)
                 dispatcher.utter_message(str(str_estimated))
-                dispatcher.utter_message("Untuk jenis servis yang tersedia, ongkos kirim dan estimasi sampai silahkan baca menurun sesuai data 
-                dibawah ini ya kak :)")
+                dispatcher.utter_message("Untuk jenis servis yang tersedia, ongkos kirim dan estimasi sampai silahkan baca menurun sesuai data dibawah ini ya kak :)")
                 dispatcher.utter_message(str(str_service))
                 dispatcher.utter_message(str(cost))
                 dispatcher.utter_template("utter_estimated",tracker,Estimated=str(str_estimated))
