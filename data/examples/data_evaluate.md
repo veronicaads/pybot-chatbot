@@ -110,7 +110,6 @@
 - harganya berapa ?
 - Berapa harganya min?
 - Berapa harga barangnya ?
-- Berapa lama jadinya ?
 - Price list nya boleh minta ?
 - Berapaan ya ?
 - [Hardcase](Material) berapa harganya kak ?

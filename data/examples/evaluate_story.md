@@ -5,15 +5,15 @@
     - action_save_smartphone_type
     - slot{"JenisHP": "samsung j7 prime"}
     - action_check_stock
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 * tanya_ketersediaan_produk{"Material": "Hardcase", "Jenis_HP": "j7 prime"}
     - action_save_smartphone_type
     - slot{"JenisHP": "samsung j7 prime"}
     - action_check_stock
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 
 ## Generated Story Tika
@@ -68,7 +68,7 @@
     - action_save_smartphone_type
     - slot{"JenisHP": "iphone 6"}
     - action_check_stock
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 
 ## Generated Story Diana
@@ -78,7 +78,7 @@
     - action_save_smartphone_type
     - slot{"JenisHP": "iphone 6"}
     - action_check_stock
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 
 ## Generated Story Yosua
@@ -92,14 +92,14 @@
     - action_save_smartphone_type
     - slot{"JenisHP": "iphone 8"}
     - action_check_stock
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 * tanya_lama_pengerjaan{"Material": "hardcase"}
     - slot{"Material": "hardcase"}
     - action_reply_lama_pengerjaan
 * tanya_logistik
     - action_reply_logistik_tersedia
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 
 ## Generated Story Eva
@@ -164,7 +164,7 @@
     - action_check_stock
 * closing
     - utter_closing
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 * tanya_logistik
     - action_reply_logistik_tersedia
@@ -180,7 +180,7 @@
     - action_check_stock
 * tanya_lama_pengerjaan
     - action_reply_lama_pengerjaan
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 * tanya_logistik
     - action_reply_logistik_tersedia
@@ -192,7 +192,7 @@
     - action_save_smartphone_type
     - slot{"JenisHP": "iphone 6"}
     - action_check_stock
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 
 ## Generated Story Agung
@@ -214,9 +214,9 @@
     - action_save_smartphone_type
     - slot{"JenisHP": "iphone 5"}
     - action_check_stock
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 
 ## Generated Story Ceo
@@ -230,7 +230,7 @@
     - action_save_smartphone_type
     - slot{"JenisHP": "iphone 7+"}
     - action_check_stock
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 * tanya_logistik
     - action_reply_logistik_tersedia
@@ -244,7 +244,7 @@
     - action_check_stock
 * tanya_lama_pengerjaan
     - action_reply_lama_pengerjaan
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 * tanya_logistik
     - action_reply_logistik_tersedia
@@ -256,7 +256,7 @@
     - action_save_smartphone_type
     - slot{"JenisHP": "iphone 6"}
     - action_check_stock
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 
 ## Generated Story Felicia
@@ -271,7 +271,7 @@
     - action_reply_tanya_harga
 * tawar_harga
     - utter_harga_net
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 * tanya_logistik
     - action_reply_logistik_tersedia
@@ -321,7 +321,7 @@
     - action_check_stock
 * tanya_lama_pengerjaan
     - action_reply_lama_pengerjaan
-* Tanya_bank_pembayaran
+* tanya_bank_pembayaran
     - action_reply_bank_tersedia
 * tanya_logistik
     - action_reply_logistik_tersedia
